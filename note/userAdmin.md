@@ -208,7 +208,7 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 `````````````````````````````````````````````````````````````  
 ####Database
 ######User database
-**"piwik_user"**
+**"piwik_user": **
 The table of "piwik_user" in database stores user information include:
 ````````````````````````````````````````
 1. login
@@ -221,7 +221,7 @@ The table of "piwik_user" in database stores user information include:
 ``````````````````````````````````````````````
 
 ###### Website database
-**"piwik_site"**
+**"piwik_site": **
 The table of "piwik_site" in database stores website information include:
 ``````````````````````````````````
 1. idsite
