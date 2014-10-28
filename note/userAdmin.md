@@ -1,7 +1,7 @@
 
 ####Goal: development a php script that can add new "User" and "Website" as piwik administer
 more info:  
-	piwik user management: (http://piwik.org/docs/manage-users) 
+	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 ####Detail:
