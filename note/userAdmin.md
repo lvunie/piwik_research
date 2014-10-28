@@ -54,7 +54,7 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
 	
 	
-	**example: ** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
+	**example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
 	``````````````````````````````````````````````````````````````````
            $host = 'http://' . $_SERVER['HTTP_HOST'];
 
