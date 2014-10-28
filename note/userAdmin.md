@@ -105,7 +105,33 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 *Those class is necessary for reference!
 
 ### User Manager:
-**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php**  
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php** 
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php** 
+ 
+######Class: model  
+
+````````````````````````````````````````````````````
+getUsers(array $userLogins)  
+getUsersLogin()  
+getUsersSitesFromAccess($access)  
+getUsersAccessFromSite($idSite)  
+getUsersLoginWithSiteAccess($idSite, $access)  
+getSitesAccessFromUser($userLogin)  
+getUser($userLogin)  
+getUserByEmail($userEmail)  
+getUserByTokenAuth($tokenAuth)  
+addUser($userLogin, $passwordTransformed, $email, $alias, $tokenAuth, $dateRegistered)   
+setSuperUserAccess($userLogin, $hasSuperUserAccess)  
+getUsersHavingSuperUserAccess()  
+updateUser($userLogin, $password, $email, $alias, $tokenAuth)  
+userExists($userLogin)  
+userEmailExists($userEmail)  
+addUserAccess($userLogin, $access, $idSites)  
+deleteUserOnly($userLogin)  
+deleteUserAccess($userLogin, $idSites = null)  
+getDb()  
+``````````````````````````````````````````````
+
 ######Class: API  
 ``````````````````````````````````````````````
 // get preference  
@@ -146,36 +172,38 @@ checkUserHasNotSuperUserAccess($userLogin)
 checkAccessType($access)  
 isUserTheOnlyUserHavingSuperUserAccess($userLogin)  
 getTokenAuth($userLogin, $md5Password)  
-`````````````````````````````````````````````````````````
-
-**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php**     
-######Class: model  
-
-````````````````````````````````````````````````````
-getUsers(array $userLogins)  
-getUsersLogin()  
-getUsersSitesFromAccess($access)  
-getUsersAccessFromSite($idSite)  
-getUsersLoginWithSiteAccess($idSite, $access)  
-getSitesAccessFromUser($userLogin)  
-getUser($userLogin)  
-getUserByEmail($userEmail)  
-getUserByTokenAuth($tokenAuth)  
-addUser($userLogin, $passwordTransformed, $email, $alias, $tokenAuth, $dateRegistered)   
-setSuperUserAccess($userLogin, $hasSuperUserAccess)  
-getUsersHavingSuperUserAccess()  
-updateUser($userLogin, $password, $email, $alias, $tokenAuth)  
-userExists($userLogin)  
-userEmailExists($userEmail)  
-addUserAccess($userLogin, $access, $idSites)  
-deleteUserOnly($userLogin)  
-deleteUserAccess($userLogin, $idSites = null)  
-getDb()  
-``````````````````````````````````````````````
+`````````````````````````````````````````````````````````  
 
 ### Website Manager:
+**C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
-######Class: API
+######Class: Model
+`````````````````````````````````````````````````````````
+createSite($site)
+getSitesFromGroup($group)
+getSitesGroups()
+getAllSites()
+getSitesWithVisits($time, $now)
+getAllSitesIdFromSiteUrl($url, $urlBis)
+getSitesIdFromSiteUrlHavingAccess($url, $urlBis, $login)
+getSitesFromTimezones($timezones)
+deleteSite($idSite)
+getSitesFromIds($idSites, $limit = false)
+getSiteFromId($idSite)
+getSitesId()
+getSiteUrlsFromId($idSite)
+getAliasSiteUrlsFromId($idSite)
+updateSite($site, $idSite)
+getUniqueSiteTimezones()
+updateSiteCreatedTime($idSites, $minDateSql)
+insertSiteUrl($idSite, $url)
+getPatternMatchSites($ids, $pattern, $limit)
+deleteSiteAliasUrls($idsite)
+getDb()
+
+`````````````````````````````````````````````````````````
+
+######Class: API(too many, no need to display all here)
 ```````````````````````````````````````````````````````````
 getImageTrackingCode($idSite, $piwikUrl = '', $actionName = false, $idGoal = false, $revenue = false)
 getSitesFromGroup($group) 
@@ -224,7 +252,7 @@ setSiteAliasUrls($idSite, $urls = array())
 getIpsForRange($ipRange)
 setGlobalExcludedIps($excludedIps)
 setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
-......(too many, no need to display all here)
+......
 `````````````````````````````````````````````````````````````  
 
 
