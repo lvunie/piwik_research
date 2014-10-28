@@ -17,7 +17,7 @@ more info:
 
 
 ####Key notes:
-1. need to access piwik database to add or modify the correspond table(database management)  
+1. need to access piwik database to add or modify the correspond table (Database management)  
 2. need to know how to call piwik API in php or other script.
 Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
 3. find out what modal/APIs/functions might need.   
@@ -70,7 +70,7 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		(The UsersManager API lets you Manage Users and their permissions to access specific websites.)  
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
 		(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
-	
+
 	
 **example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
 	``````````````````````````````````````````````````````````````````
@@ -95,10 +95,77 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
 	
 
-####Some other file might related with user account management in "..\piwik\plugin" folder
+###Some other file might related with user account management in "..\piwik\plugin" folder
 
 	Dashboard 
 	Login 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+###related class  
+
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php**  
+######Class: API
+// get preference
+setUserPreference($userLogin, $preferenceName, $preferenceValue)
+getUserPreference($userLogin, $preferenceName)
+getPreferenceId($login, $preference)
+getDefaultUserPreference($preferenceName, $login)
+
+// user login
+getUsers($userLogins = '')
+getUsersLogin()
+getUsersSitesFromAccess($access)
+getUsersAccessFromSite($idSite)
+getUsersWithSiteAccess($idSite, $access)
+getSitesAccessFromUser($userLogin)
+getUser($userLogin)
+getUserByEmail($userEmail)
+checkLogin($userLogin)
+checkEmail($email)
+getCleanAlias($alias, $userLogin)
+
+//user operation
+addUser($userLogin, $password, $email, $alias = false, $_isPasswordHashed = false)
+setSuperUserAccess($userLogin, $hasSuperUserAccess)
+hasSuperUserAccess()
+getUsersHavingSuperUserAccess()
+updateUser($userLogin, $password = false, $email = false, $alias = false, $_isPasswordHashed = false)
+deleteUser($userLogin)
+
+// user status
+userExists($userLogin)
+userEmailExists($userEmail)
+setUserAccess($userLogin, $access, $idSites)
+checkUserExists($userLogin)
+checkUserEmailExists($userEmail)
+checkUserIsNotAnonymous($userLogin)
+checkUserHasNotSuperUserAccess($userLogin)
+checkAccessType($access)
+isUserTheOnlyUserHavingSuperUserAccess($userLogin)
+getTokenAuth($userLogin, $md5Password)
+
+
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php** 
+######Class: model
+getUsers(array $userLogins)
+getUsersLogin()
+getUsersSitesFromAccess($access)
+getUsersAccessFromSite($idSite)
+getUsersLoginWithSiteAccess($idSite, $access)
+getSitesAccessFromUser($userLogin)
+getUser($userLogin)
+getUserByEmail($userEmail)
+getUserByTokenAuth($tokenAuth)
+addUser($userLogin, $passwordTransformed, $email, $alias, $tokenAuth, $dateRegistered)
+setSuperUserAccess($userLogin, $hasSuperUserAccess)
+getUsersHavingSuperUserAccess()
+updateUser($userLogin, $password, $email, $alias, $tokenAuth)
+userExists($userLogin)
+userEmailExists($userEmail)
+addUserAccess($userLogin, $access, $idSites)
+deleteUserOnly($userLogin)
+deleteUserAccess($userLogin, $idSites = null)
+getDb()
 
 
 
