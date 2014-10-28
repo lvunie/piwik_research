@@ -16,7 +16,8 @@ more info:
 **Attention: when there is new website added to piwik tracking, need to generate tracking code for new website
 
 ##Key notes:
-The function of this project should include:  
+The function of this project should include: 
+   
 1. Access piwik database to add or modify the correspond table (Database management)  
 2. Call piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
 3. more....  
