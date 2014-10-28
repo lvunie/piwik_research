@@ -238,7 +238,7 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ```````````````````````````````````````````````````````````````````
 
 	
-####Some other file might related with user account management in "..\piwik\plugin" folder
+####Other file might related with user account management in "plugin" folder
 
 	Dashboard 
 	Login 
