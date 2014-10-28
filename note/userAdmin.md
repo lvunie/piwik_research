@@ -104,14 +104,15 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 ###related class  
 
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php**  
-######Class: API
-// get preference
+######Class: API  
+``````````````````````````````````````````````
+// get preference  
 setUserPreference($userLogin, $preferenceName, $preferenceValue)  
 getUserPreference($userLogin, $preferenceName)  
 getPreferenceId($login, $preference)  
 getDefaultUserPreference($preferenceName, $login)  
 
-// user login
+// user login  
 getUsers($userLogins = '')  
 getUsersLogin()  
 getUsersSitesFromAccess($access)  
@@ -124,7 +125,7 @@ checkLogin($userLogin)
 checkEmail($email)  
 getCleanAlias($alias, $userLogin)  
 
-//user operation
+//user operation  
 addUser($userLogin, $password, $email, $alias = false, $_isPasswordHashed = false)  
 setSuperUserAccess($userLogin, $hasSuperUserAccess)  
 hasSuperUserAccess()  
@@ -132,7 +133,7 @@ getUsersHavingSuperUserAccess()
 updateUser($userLogin, $password = false, $email = false, $alias = false, $_isPasswordHashed = false)  
 deleteUser($userLogin)  
   
-// user status  
+// user status   
 userExists($userLogin)  
 userEmailExists($userEmail)  
 setUserAccess($userLogin, $access, $idSites)  
@@ -143,11 +144,12 @@ checkUserHasNotSuperUserAccess($userLogin)
 checkAccessType($access)  
 isUserTheOnlyUserHavingSuperUserAccess($userLogin)  
 getTokenAuth($userLogin, $md5Password)  
+`````````````````````````````````````````````````````````
 
-
-**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php**   
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php**     
 ######Class: model  
 
+````````````````````````````````````````````````````
 getUsers(array $userLogins)  
 getUsersLogin()  
 getUsersSitesFromAccess($access)  
@@ -167,6 +169,6 @@ addUserAccess($userLogin, $access, $idSites)
 deleteUserOnly($userLogin)  
 deleteUserAccess($userLogin, $idSites = null)  
 getDb()  
-
+``````````````````````````````````````````````
 
 
