@@ -4,7 +4,7 @@ more info:
 	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
-####Detail:
+####Detail and Function require:
 ######1. Create new piwik user
 ######2. User account management (add,edit,delete)
 ######3. Superuser can assign administration authority to lower user
