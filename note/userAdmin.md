@@ -25,34 +25,31 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 	following modal/API might be use in the project:
 
 	######For User Management:	
-	- Exception;
-	- Access;
-	- Common;
-	- Config;
-	- Date;
-	- Option;
-	- Piwik;
-	- Site;
-	- Tracker;
+	-- Access;(http://developer.piwik.org/api-reference/Piwik/Access)
+	-- Common;(http://developer.piwik.org/api-reference/Piwik/Common)
+	-- Config;(http://developer.piwik.org/api-reference/Piwik/Config)
+	-- Date;(http://developer.piwik.org/api-reference/Piwik/Date)
+	-- Option;(http://developer.piwik.org/api-reference/Piwik/Option)
+	-- Piwik;(http://developer.piwik.org/api-reference/Piwik/Piwik)
+	-- Site;(http://developer.piwik.org/api-reference/Piwik/Site)
+	-- Tracker;()
 	
 	######For Site Management;
-	- Exception;
-	- Access;
-	- Common;
-	- Date;
-	- Db;
-	- IP;
-	- MetricsFormatter;
-	- Option;
-	- Piwik;
-	- ProxyHttp;
-	- SettingsPiwik;
-	- SettingsServer;
-	- Site;
-	- TaskScheduler;
-	- Tracker;
-	- Url;
-	- UrlHelper;
+	-- Access;(http://developer.piwik.org/api-reference/Piwik/Access)
+	-- Common;(http://developer.piwik.org/api-reference/Piwik/Common)
+	-- Date;(http://developer.piwik.org/api-reference/Piwik/Date)
+	-- Db;(http://developer.piwik.org/api-reference/Piwik/Db)
+	-- IP;(http://developer.piwik.org/api-reference/Piwik/IP)
+	-- MetricsFormatter;(http://developer.piwik.org/api-reference/Piwik/MetricsFormatter)
+	-- Option;(http://developer.piwik.org/api-reference/Piwik/Option)
+	-- Piwik;(http://developer.piwik.org/api-reference/Piwik/Piwik)
+	-- SettingsPiwik;(http://developer.piwik.org/api-reference/Piwik/SettingsPiwik)
+	-- SettingsServer;(http://developer.piwik.org/api-reference/Piwik/SettingsServer)
+	-- Site;(http://developer.piwik.org/api-reference/Piwik/Site)
+	-- TaskScheduler;(http://developer.piwik.org/api-reference/Piwik/TaskScheduler)
+	-- Tracker;()
+	-- Url;(http://developer.piwik.org/api-reference/Piwik/Url)
+	-- UrlHelper;(http://developer.piwik.org/api-reference/Piwik/UrlHelper)
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
