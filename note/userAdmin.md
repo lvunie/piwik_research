@@ -23,7 +23,6 @@ The function of this project should include:
 3. more....  
 
 
-
 **following modal/API might be use in the project:
 
 ######For User Management:	
@@ -210,28 +209,15 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 
 
 ######**Other related example or files:**
-````````````````````````````````````		
-        $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
-        $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
-        $view->hasSomeViewAccess  = Piwik::isUserHasSomeViewAccess();
-        $view->isUserIsAnonymous  = Piwik::isUserIsAnonymous();
-        $view->hasSuperUserAccess = Piwik::hasUserSuperUserAccess();
-		
-		if (!Piwik::isUserIsAnonymous()) {
-            $view->emailSuperUser = implode(',', Piwik::getAllSuperUserAccessEmailAddresses());
-        }
-```````````````````````````````````````````````````		
-		
+
 **C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
 **C:\xampp\htdocs\piwik\piwik\core\Access.php**  
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\**  
-		(The UsersManager API lets you Manage Users and their permissions to access specific websites.)  
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
-		(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
 
 	
 **example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
-	``````````````````````````````````````````````````````````````````
+``````````````````````````````````````````````````````````````````
            $host = 'http://' . $_SERVER['HTTP_HOST'];
 
            //Adds new user to piwik_users using piwik API
@@ -252,8 +238,7 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 	```````````````````````````````````````````````````````````````````
 
 	
-
-###Some other file might related with user account management in "..\piwik\plugin" folder
+####Some other file might related with user account management in "..\piwik\plugin" folder
 
 	Dashboard 
 	Login 
