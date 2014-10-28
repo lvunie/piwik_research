@@ -22,7 +22,7 @@ more info:
 Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
 3. find out what modal/APIs/functions might need.   
 
-####following modal/API might be use in the project:
+**following modal/API might be use in the project:**
 
 	######For User Management:	
 	-- Access;(http://developer.piwik.org/api-reference/Piwik/Access)  
