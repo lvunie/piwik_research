@@ -101,8 +101,9 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 	Login 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-###related class  
+##Reference class  
 
+### User administer:
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php**  
 ######Class: API  
 ``````````````````````````````````````````````
@@ -170,5 +171,60 @@ deleteUserOnly($userLogin)
 deleteUserAccess($userLogin, $idSites = null)  
 getDb()  
 ``````````````````````````````````````````````
+
+### Website management:
+**C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
+######Class: API
+```````````````````````````````````````````````````````````
+getImageTrackingCode($idSite, $piwikUrl = '', $actionName = false, $idGoal = false, $revenue = false)
+getSitesFromGroup($group) 
+getSitesGroups()
+getSiteFromId($idSite)
+getModel() ???????
+getSiteUrlsFromId($idSite)
+getSitesId()
+getAllSites()
+getAllSitesId()
+getSitesIdWithVisits($timestamp = false)
+getSitesWithAdminAccess($fetchAliasUrls = false)
+getSitesWithViewAccess()
+getSitesWithAtLeastViewAccess($limit = false, $_restrictSitesToLogin = false)
+getSitesIdWithAdminAccess()
+getSitesIdWithViewAccess()
+getSitesIdWithAtLeastViewAccess($_restrictSitesToLogin = false)
+getSitesFromIds($idSites, $limit = false)
+getNormalizedUrls($url)
+getSitesIdFromSiteUrl($url)
+getSitesIdFromTimezones($timezones)
+addSite($siteName,
+                            $urls,
+                            $ecommerce = null,
+                            $siteSearch = null,
+                            $searchKeywordParameters = null,
+                            $searchCategoryParameters = null,
+                            $excludedIps = null,
+                            $excludedQueryParameters = null,
+                            $timezone = null,
+                            $currency = null,
+                            $group = null,
+                            $startDate = null,
+                            $excludedUserAgents = null,
+                            $keepURLFragments = null,
+                            $type = null)
+postUpdateWebsite($idSite)
+deleteSite($idSite)
+checkAtLeastOneUrl($urls)
+checkValidTimezone($timezone)
+checkValidCurrency($currency)
+checkAndReturnType($type)
+checkAndReturnExcludedIps($excludedIps)
+addSiteAliasUrls($idSite, $urls)
+setSiteAliasUrls($idSite, $urls = array())
+getIpsForRange($ipRange)
+setGlobalExcludedIps($excludedIps)
+setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
+`````````````````````````````````````````````````````````````  
+
+
 
 
