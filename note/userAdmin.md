@@ -25,13 +25,13 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 **following modal/API might be use in the project:**
 
 ######For User Management:	
-	-- Access;(http://developer.piwik.org/api-reference/Piwik/Access)  
-	-- Common;(http://developer.piwik.org/api-reference/Piwik/Common)  
-	-- Config;(http://developer.piwik.org/api-reference/Piwik/Config)  
-	-- Date;(http://developer.piwik.org/api-reference/Piwik/Date)  
-	-- Option;(http://developer.piwik.org/api-reference/Piwik/Option)  
-	-- Piwik;(http://developer.piwik.org/api-reference/Piwik/Piwik)  
-	-- Site;(http://developer.piwik.org/api-reference/Piwik/Site)  
+	- Access;(http://developer.piwik.org/api-reference/Piwik/Access)  
+	- Common;(http://developer.piwik.org/api-reference/Piwik/Common)  
+	- Config;(http://developer.piwik.org/api-reference/Piwik/Config)  
+	- Date;(http://developer.piwik.org/api-reference/Piwik/Date)  
+	- Option;(http://developer.piwik.org/api-reference/Piwik/Option)  
+	- Piwik;(http://developer.piwik.org/api-reference/Piwik/Piwik)  
+	- Site;(http://developer.piwik.org/api-reference/Piwik/Site)  
 	
 ######For Site Management;
 	-- Access;(http://developer.piwik.org/api-reference/Piwik/Access)  
