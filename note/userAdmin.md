@@ -5,21 +5,22 @@ more info:
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 ####Detail and Functions in the script will include:
-**1. New piwik user creation  
-**2. Piwik user account management (add,edit,delete)  
-**3. Superuser can assign administration authority to lower user  
-**4. Tracking website management (add, edit, delete )   
-**5. Other website setting option  
-**6. "user" associate "website", with permission to view data, information  
-**7.  ...more?  
+-1. New piwik user creation  
+-2. Piwik user account management (add,edit,delete)  
+-3. Superuser can assign administration authority to lower user  
+-4. Tracking website management (add, edit, delete )   
+-5. Other website setting option  
+-6. "user" associate "website", with permission to view data, information  
+-7.  ...more?  
   
 **Attention: when each website added, need to generate tracking code for new website
 
 ##Key notes:
-1. need to access piwik database to add or modify the correspond table (Database management)  
-2. need to know how to call piwik API in php or other script.
+The function of this project should include:
+1. Access piwik database to add or modify the correspond table (Database management)  
+2. Call piwik API to get/set data.
 Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
-3. find out what modal/APIs/functions might need.   
+
 
 **following modal/API might be use in the project:
 
