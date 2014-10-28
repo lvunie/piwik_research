@@ -208,7 +208,7 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 `````````````````````````````````````````````````````````````  
 
 
-######**Other related example or files:**
+####**Other related example or files:**
 
 **C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
 **C:\xampp\htdocs\piwik\piwik\core\Access.php**  
