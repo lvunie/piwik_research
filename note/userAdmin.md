@@ -56,7 +56,7 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
-	**Other related example or files:**
+######**Other related example or files:**
 ````````````````````````````````````		
         $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
         $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
@@ -69,15 +69,15 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
         }
 ```````````````````````````````````````````````````		
 		
-	**C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
-	**C:\xampp\htdocs\piwik\piwik\core\Access.php**  
-	**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\**  
+**C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
+**C:\xampp\htdocs\piwik\piwik\core\Access.php**  
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\**  
 		(The UsersManager API lets you Manage Users and their permissions to access specific websites.)  
-	**C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
+**C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
 		(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
 	
 	
-	**example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
+**example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
 	``````````````````````````````````````````````````````````````````
            $host = 'http://' . $_SERVER['HTTP_HOST'];
 
