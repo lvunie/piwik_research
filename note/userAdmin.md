@@ -1,17 +1,17 @@
 
-####Goal: development a php script that can add new "User" and "Website" as piwik administer
+####Goal: create code to manage "User" and "Website" as piwik administer.
 more info:  
 	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
-####Detail and Functions in the script will include:
--1. New piwik user creation  
--2. Piwik user account management (add,edit,delete)  
--3. Superuser can assign administration authority to lower user  
--4. Tracking website management (add, edit, delete )   
--5. Other website setting option  
--6. "user" associate "website", with permission to view data, information  
--7.  ...more?  
+#####Detail and Functions in the script might include:
+1. New piwik user creation  
+2. Piwik user account management (add,edit,delete)  
+3. Superuser can assign administration authority to lower user  
+4. Tracking website management (add, edit, delete )   
+5. Other website setting option  
+6. "user" associate "website", with permission to view data, information  
+7.  ...more?  
   
 **Attention: when each website added, need to generate tracking code for new website
 
