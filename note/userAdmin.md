@@ -13,7 +13,7 @@ more info:
 6. "user" associate "website", with permission to view data, information  
 7.  ...more?  
   
-**Attention: when each website added, need to generate tracking code for new website
+**Attention: when there is new website added to piwik tracking, need to generate tracking code for new website
 
 ##Key notes:
 The function of this project should include:
