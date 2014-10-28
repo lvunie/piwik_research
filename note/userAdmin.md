@@ -56,8 +56,8 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
-**Other related example or files:**
-		
+	**Other related example or files:**
+````````````````````````````````````		
         $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
         $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
         $view->hasSomeViewAccess  = Piwik::isUserHasSomeViewAccess();
@@ -67,7 +67,7 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		if (!Piwik::isUserIsAnonymous()) {
             $view->emailSuperUser = implode(',', Piwik::getAllSuperUserAccessEmailAddresses());
         }
-		
+```````````````````````````````````````````````````		
 		
 	**C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
 	**C:\xampp\htdocs\piwik\piwik\core\Access.php**  
