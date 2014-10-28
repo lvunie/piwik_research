@@ -24,7 +24,7 @@ when each website added, need to generate tracking code for new website
 
 ####key point:
 1. need to access piwik database and modify the correspond table (such as add "user" and "website")  
-2.(need to know how to call piwik API in php or other script)
+2. need to know how to call piwik API in php or other script(????)
 3. find out what modal/APIs/functions might need.   
 
 	following modal/API might be use in the project:
