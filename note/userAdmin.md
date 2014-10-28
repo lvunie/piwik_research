@@ -1,28 +1,23 @@
 
-####Goal: development a php script that can add new "User" and "Website" as piwik administer
+##Goal: development a php script that can add new "User" and "Website" as piwik administer
 more info:  
 	piwik user management: (http://piwik.org/docs/manage-users) 
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 ####Detail:
-1. Create new piwik user
-2. Account management
-	- add,
-	- edit,
-	- delete
-3. Superuser can assign administration authority to lower user
-4. Website management
-	- add,
-	- edit,
-	- delete
-5.	other website setting......
-6. "user" associate "website", with permission to view data, information......
+######1. Create new piwik user
+######2. User account management (add,edit,delete)
+######3. Superuser can assign administration authority to lower user
+######4. Website management (add, edit, delete ) 
+######5.	Other website setting option
+######6. "user" associate "website", with permission to view data, information
+######7.  ...more?
 
 **Attention: when each website added, need to generate tracking code for new website
 
 
-####key point:
-1. need to access piwik database and modify the correspond table (such as add "user" and "website")  
+####Key notes:
+1. need to access piwik database to add or modify the correspond table(such as add "user" and "website" log)  
 2. need to know how to call piwik API in php or other script(????)
 Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 3. find out what modal/APIs/functions might need.   
@@ -34,7 +29,7 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 		- ...
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		
-		**other related function or files:**
+		**other related example or files:**
 		
         $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
         $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
@@ -78,7 +73,7 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
 	
 
-####Something might related with user account management in "..\piwik\plugin" folder
+####Some other file might related with user account management in "..\piwik\plugin" folder
 
 	Dashboard 
 	Login 
