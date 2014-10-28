@@ -211,10 +211,10 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ####**Other related example or files:**
 
 `````````
-C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
-C:\xampp\htdocs\piwik\piwik\core\Access.php**  
-C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\**  
-C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
+C:\xampp\htdocs\piwik\piwik\core\Settings\.....
+C:\xampp\htdocs\piwik\piwik\core\Access.php
+C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\....  
+C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
 ```````````````
 	
 **example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
