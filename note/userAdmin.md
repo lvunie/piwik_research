@@ -24,9 +24,9 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 
 	following modal/API might be use in the project:
 
-	######For User Management:			      For Site Management:
-	- Exception;								- Exception;
-	- Access;									- Access;
+	######For User Management:	
+	- Exception;
+	- Access;
 	- Common;
 	- Config;
 	- Date;
@@ -55,8 +55,8 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 	- UrlHelper;
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
-		
-**other related example or files:**
+
+**Other related example or files:**
 		
         $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
         $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
