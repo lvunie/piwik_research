@@ -1,7 +1,7 @@
 
-####Goal: to run a php script that can add new "User" and "Website" as piwik administer
-more info:
-	piwik user management: (http://piwik.org/docs/manage-users)  
+####Goal: development a php script that can add new "User" and "Website" as piwik administer
+more info:  
+	piwik user management: (http://piwik.org/docs/manage-users) 
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 ####Detail:
@@ -18,19 +18,22 @@ more info:
 5.	other website setting......
 6. "user" associate "website", with permission to view data, information......
 
-**Attention**
+**Attention:**  
 when each website added, need to generate tracking code for new website
 
 
 ####key point:
 1. need to access piwik database and modify the correspond table (such as add "user" and "website")  
-2. (need to know how to call piwik API in php or other script)  
+2. (need to know how to call piwik API in php or other script)???
 3. find out what modal/APIs/functions might need.   
-Here is for classes list(http://developer.piwik.org/api-reference/classes)
 
-		"acess" (http://developer.piwik.org/api-reference/Piwik/Access)
+	following modal/API might be use in the project:
+
+		-"acess" (http://developer.piwik.org/api-reference/Piwik/Access)
+		- .............
+Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		
-		**related function or files:**
+		**other related function or files:**
 		
         $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
         $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
@@ -43,15 +46,15 @@ Here is for classes list(http://developer.piwik.org/api-reference/classes)
         }
 		
 		
-	C:\xampp\htdocs\piwik\piwik\core\Settings\.....
-	C:\xampp\htdocs\piwik\piwik\core\Access.php
-	C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\
-	 (The UsersManager API lets you Manage Users and their permissions to access specific websites.)
-	C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
+	C:\xampp\htdocs\piwik\piwik\core\Settings\.....  
+	C:\xampp\htdocs\piwik\piwik\core\Access.php  
+	C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\  
+	 (The UsersManager API lets you Manage Users and their permissions to access specific websites.)  
+	C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....  
 	(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
 	
 	
-	add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
+	**example*: * add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
 	``````````````````````````````````````````````````````````````````
            $host = 'http://' . $_SERVER['HTTP_HOST'];
 
