@@ -51,55 +51,6 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
-######**Other related example or files:**
-````````````````````````````````````		
-        $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
-        $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
-        $view->hasSomeViewAccess  = Piwik::isUserHasSomeViewAccess();
-        $view->isUserIsAnonymous  = Piwik::isUserIsAnonymous();
-        $view->hasSuperUserAccess = Piwik::hasUserSuperUserAccess();
-		
-		if (!Piwik::isUserIsAnonymous()) {
-            $view->emailSuperUser = implode(',', Piwik::getAllSuperUserAccessEmailAddresses());
-        }
-```````````````````````````````````````````````````		
-		
-**C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
-**C:\xampp\htdocs\piwik\piwik\core\Access.php**  
-**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\**  
-		(The UsersManager API lets you Manage Users and their permissions to access specific websites.)  
-**C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
-		(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
-
-	
-**example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
-	``````````````````````````````````````````````````````````````````
-           $host = 'http://' . $_SERVER['HTTP_HOST'];
-
-           //Adds new user to piwik_users using piwik API
-            $httpClient = new Zend_Http_Client($host . '/piwik/index.php');
-            $httpClient->setParameterGet(array(
-                'module'        => 'API',
-                'method'        => 'UsersManager.addUser',
-                'format'        => 'PHP',
-                'prettyDisplay' => 'true',
-                'userLogin'     => $userSettings['username'], //username in the database
-                'password'      => $userSettings['password'], //password from db
-                'email'         => $dealerSettings['email_address'], //email adress from db
-                'alias'         => 'Partner',
-                'token_auth'    => 'ee93b283772be8fd9b4a6138ea1f336b' //admin token_auth for permission to do this API
-            ));
-
-            $permResponse = $httpClient->request();	
-	```````````````````````````````````````````````````````````````````
-
-	
-
-###Some other file might related with user account management in "..\piwik\plugin" folder
-
-	Dashboard 
-	Login 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ##Reference class  
 *Those class is necessary for reference!
@@ -203,7 +154,7 @@ getDb()
 
 `````````````````````````````````````````````````````````
 
-######Class: API(too many, no need to display all here)
+######Class: API (too many, no need to display all here)
 ```````````````````````````````````````````````````````````
 getImageTrackingCode($idSite, $piwikUrl = '', $actionName = false, $idGoal = false, $revenue = false)
 getSitesFromGroup($group) 
@@ -254,6 +205,58 @@ setGlobalExcludedIps($excludedIps)
 setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ......
 `````````````````````````````````````````````````````````````  
+
+
+######**Other related example or files:**
+````````````````````````````````````		
+        $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
+        $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
+        $view->hasSomeViewAccess  = Piwik::isUserHasSomeViewAccess();
+        $view->isUserIsAnonymous  = Piwik::isUserIsAnonymous();
+        $view->hasSuperUserAccess = Piwik::hasUserSuperUserAccess();
+		
+		if (!Piwik::isUserIsAnonymous()) {
+            $view->emailSuperUser = implode(',', Piwik::getAllSuperUserAccessEmailAddresses());
+        }
+```````````````````````````````````````````````````		
+		
+**C:\xampp\htdocs\piwik\piwik\core\Settings\.....**  
+**C:\xampp\htdocs\piwik\piwik\core\Access.php**  
+**C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\**  
+		(The UsersManager API lets you Manage Users and their permissions to access specific websites.)  
+**C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....**  
+		(SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.)
+
+	
+**example:** add a users into the piwik_users table: (http://forum.piwik.org/read.php?2,61811)
+	``````````````````````````````````````````````````````````````````
+           $host = 'http://' . $_SERVER['HTTP_HOST'];
+
+           //Adds new user to piwik_users using piwik API
+            $httpClient = new Zend_Http_Client($host . '/piwik/index.php');
+            $httpClient->setParameterGet(array(
+                'module'        => 'API',
+                'method'        => 'UsersManager.addUser',
+                'format'        => 'PHP',
+                'prettyDisplay' => 'true',
+                'userLogin'     => $userSettings['username'], //username in the database
+                'password'      => $userSettings['password'], //password from db
+                'email'         => $dealerSettings['email_address'], //email adress from db
+                'alias'         => 'Partner',
+                'token_auth'    => 'ee93b283772be8fd9b4a6138ea1f336b' //admin token_auth for permission to do this API
+            ));
+
+            $permResponse = $httpClient->request();	
+	```````````````````````````````````````````````````````````````````
+
+	
+
+###Some other file might related with user account management in "..\piwik\plugin" folder
+
+	Dashboard 
+	Login 
+
+
 
 
 
