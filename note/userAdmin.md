@@ -56,7 +56,7 @@ Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		
-		**other related example or files:**
+**other related example or files:**
 		
         $view->isSuperUser = Access::getInstance()->hasSuperUserAccess();
         $view->hasSomeAdminAccess = Piwik::isUserHasSomeAdminAccess();
