@@ -102,8 +102,9 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ##Reference class  
+*Those class is necessary for reference!
 
-### User administer:
+### User Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php**  
 ######Class: API  
 ``````````````````````````````````````````````
@@ -172,7 +173,7 @@ deleteUserAccess($userLogin, $idSites = null)
 getDb()  
 ``````````````````````````````````````````````
 
-### Website management:
+### Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
 ######Class: API
 ```````````````````````````````````````````````````````````
@@ -223,6 +224,7 @@ setSiteAliasUrls($idSite, $urls = array())
 getIpsForRange($ipRange)
 setGlobalExcludedIps($excludedIps)
 setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
+......(too many, no need to display all here)
 `````````````````````````````````````````````````````````````  
 
 
