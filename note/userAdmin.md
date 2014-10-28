@@ -19,6 +19,7 @@ more info:
 ####Key notes:
 1. need to access piwik database to add or modify the correspond table(such as add "user" and "website" log)  
 2. need to know how to call piwik API in php or other script.
+Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
 3. find out what modal/APIs/functions might need.   
 
 	following modal/API might be use in the project:
