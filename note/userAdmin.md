@@ -235,7 +235,7 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
             ));
 
             $permResponse = $httpClient->request();	
-	```````````````````````````````````````````````````````````````````
+```````````````````````````````````````````````````````````````````
 
 	
 ####Some other file might related with user account management in "..\piwik\plugin" folder
