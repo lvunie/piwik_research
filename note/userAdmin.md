@@ -18,19 +18,20 @@ more info:
 5.	other website setting......
 6. "user" associate "website", with permission to view data, information......
 
-**Attention:**  
-when each website added, need to generate tracking code for new website
+**Attention: when each website added, need to generate tracking code for new website
 
 
 ####key point:
 1. need to access piwik database and modify the correspond table (such as add "user" and "website")  
 2. need to know how to call piwik API in php or other script(????)
+Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)
 3. find out what modal/APIs/functions might need.   
 
 	following modal/API might be use in the project:
 
 		-"acess" (http://developer.piwik.org/api-reference/Piwik/Access)
-		- .............
+		- ...
+		- ...
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 		
 		**other related function or files:**
@@ -74,9 +75,8 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
             $permResponse = $httpClient->request();	
 	```````````````````````````````````````````````````````````````````
-	
 
-	Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
+	
 
 ####Something might related with user account management in "..\piwik\plugin" folder
 
