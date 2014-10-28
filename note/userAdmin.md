@@ -4,12 +4,12 @@ more info:
 	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
-####Detail and Function require:
-######1. Create new piwik user
-######2. User account management (add,edit,delete)
+####Detail and Functions in the script will include:
+######1. New piwik user creation
+######2. Piwik user account management (add,edit,delete)
 ######3. Superuser can assign administration authority to lower user
-######4. Website management (add, edit, delete ) 
-######5.	Other website setting option
+######4. Tracking website management (add, edit, delete ) 
+######5. Other website setting option
 ######6. "user" associate "website", with permission to view data, information
 ######7.  ...more?
 
