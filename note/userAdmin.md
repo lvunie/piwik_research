@@ -9,12 +9,12 @@
 ######Question List
 
 
-###[Goal]: create code to manage "User" and "Website" as piwik administer.
+##[Goal]: create code to manage "User" and "Website" as piwik administer.
 more info:  
 	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
-###[Detail and Functions in the script might include]:
+##[Detail and Functions in the script might include]:
 1. New piwik user creation  
 2. Piwik user account management (add,edit,delete)  
 3. Superuser can assign administration authority to lower user  
@@ -25,7 +25,7 @@ more info:
   
 **Attention: when there is new website added to piwik tracking, need to generate tracking code for new website
 
-###[Key notes]:
+##[Key notes]:
 The function of this project should include: 
    
 1. Access piwik database to add or modify the correspond table (Database management)  
@@ -33,7 +33,7 @@ The function of this project should include:
 3. more....  
 
 
-###[Piwik API call]
+##[Piwik API call]
 
 **following modal/API might be use in the project:
 
@@ -64,7 +64,7 @@ The function of this project should include:
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
-###[Database]
+##[Database]
 ######User database
 **"piwik_user":**
 The table of "piwik_user" in database stores user information include:
@@ -100,7 +100,7 @@ The table of "piwik_site" in database stores website information include:
 16. keep_url_fragment
 ``````````````````````````````````````````````
 
-###[Reference class]  
+##[Reference class]  
 *Those class is necessary for reference!
 
 #### User Manager:
@@ -281,7 +281,8 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ......
 `````````````````````````````````````````````````````````````  
 
-####**[Other related example or files]:**
+##[Example]
+**Other related example or files:**
 
 `````````
 C:\xampp\htdocs\piwik\piwik\core\Settings\.....
@@ -672,13 +673,13 @@ $mysqli->close();
 </html>
 ````````````````````````````````````````````````````````````````
 	
-###[Other]
+##[Other]
 Other file might related with user account management in "plugin" folder
 
 	Dashboard 
 	Login 
 
-###[Question]：
+##[Question]：
 1.  
 In C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\....  
    and C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....   
