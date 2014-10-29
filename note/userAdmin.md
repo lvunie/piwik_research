@@ -19,7 +19,7 @@ more info:
 The function of this project should include: 
    
 1. Access piwik database to add or modify the correspond table (Database management)  
-2. Call piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
+2. Call related piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
 3. more....  
 
 
@@ -278,8 +278,13 @@ C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
 	Dashboard 
 	Login 
 
+####Question：
+1.  
+In C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\....  
+   and C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
+What's the relationshoip between API.php and Model.php ?
 
+2. What's controller.php's role?
 
-
-
+3. Each user will have a limited for accessing different website, so where this info store?
 
