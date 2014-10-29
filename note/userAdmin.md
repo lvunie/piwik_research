@@ -1,12 +1,12 @@
 ##Menu
-	-Project goal	
-	-Function detail
-	-Key notes
-	-Related API detail
-	-Database
-	-Reference class
-	-Examples
-	-Question List
+	Project goal	
+	Function detail
+	Key notes
+	Related API detail
+	Database
+	Reference class
+	Examples
+	Question List
 
 
 
