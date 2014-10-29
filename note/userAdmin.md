@@ -286,5 +286,5 @@ What's the relationshoip between API.php and Model.php ?
 
 2. What's controller.php's role?
 
-3. Each user will have a limited for accessing different website, so where this info store?
+3. Each user(not Superuser) will have a limited permission for accessing different website, so where this info store?
 
