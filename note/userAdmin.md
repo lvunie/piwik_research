@@ -59,7 +59,18 @@ Here is link for API list(http://developer.piwik.org/api-reference/classes)
 ### User Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php** 
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php** 
- 
+
+The UsersManager API lets you Manage Users and their permissions to access specific websites.
+
+You can create users via "addUser", update existing users via "updateUser" and delete users via "deleteUser".
+There are many ways to list users based on their login "getUser" and "getUsers", their email "getUserByEmail",
+or which users have permission (view or admin) to access the specified websites "getUsersWithSiteAccess".
+
+Existing Permissions are listed given a login via "getSitesAccessFromUser", or a website ID via "getUsersAccessFromSite",
+or you can list all users and websites for a given permission via "getUsersSitesFromAccess". Permissions are set and updated
+via the method "setUserAccess".
+See also the documentation about <a href='http://piwik.org/docs/manage-users/' target='_blank'>Managing Users</a> in Piwik.
+
 ######Class: model  
 
 ````````````````````````````````````````````````````
@@ -129,17 +140,6 @@ getTokenAuth($userLogin, $md5Password)
 ### Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
-
-The UsersManager API lets you Manage Users and their permissions to access specific websites.
-
-You can create users via "addUser", update existing users via "updateUser" and delete users via "deleteUser".
-There are many ways to list users based on their login "getUser" and "getUsers", their email "getUserByEmail",
-or which users have permission (view or admin) to access the specified websites "getUsersWithSiteAccess".
-
-Existing Permissions are listed given a login via "getSitesAccessFromUser", or a website ID via "getUsersAccessFromSite",
-or you can list all users and websites for a given permission via "getUsersSitesFromAccess". Permissions are set and updated
-via the method "setUserAccess".
-See also the documentation about <a href='http://piwik.org/docs/manage-users/' target='_blank'>Managing Users</a> in Piwik.
 	
 ######Class: Model
 `````````````````````````````````````````````````````````
