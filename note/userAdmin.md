@@ -175,6 +175,21 @@ getTokenAuth($userLogin, $md5Password)
 ### Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
+
+The SitesManager API gives you full control on Websites in Piwik (create, update and delete), and many methods to retrieve websites based on various attributes.
+
+This API lets you create websites via "addSite", update existing websites via "updateSite" and delete websites via "deleteSite".
+When creating websites, it can be useful to access internal codes used by Piwik for currencies via "getCurrencyList", or timezones via "getTimezonesList".
+
+There are also many ways to request a list of websites: from the website ID via "getSiteFromId" or the site URL via "getSitesIdFromSiteUrl".
+Often, the most useful technique is to list all websites that are known to a current user, based on the token_auth, via
+"getSitesWithAdminAccess", "getSitesWithViewAccess" or "getSitesWithAtLeastViewAccess" (which returns both).
+
+Some methods will affect all websites globally: "setGlobalExcludedIps" will set the list of IPs to be excluded on all websites,
+"setGlobalExcludedQueryParameters" will set the list of URL parameters to remove from URLs for all websites.
+The existing values can be fetched via "getExcludedIpsGlobal" and "getExcludedQueryParametersGlobal".
+See also the documentation about <a href='http://piwik.org/docs/manage-websites/' target='_blank'>Managing Websites</a> in Piwik.
+
 	
 ######Class: Model
 `````````````````````````````````````````````````````````
