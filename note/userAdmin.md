@@ -291,7 +291,7 @@ What's the relationshoip between API.php and Model.php ?
 ####So now my ideas is: is it just need to simply create a script for inserting or modifying sql commend for "user" and "website" table that as finish user/website management?   
 (User/Website operation in Piwik UI == User/website database operation???)
 
-Here is a sample for showing all users from "piwik_user" table (My local's sample)
+####Here is a sample for showing all users from "piwik_user" table (My local's sample)
 ```````````````````````````````````````````````````````````````````````
 <html>
 
