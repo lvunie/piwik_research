@@ -1,10 +1,21 @@
+##Menu
+	-Project goal	
+	-Function detail
+	-Key notes
+	-Related API detail
+	-Database
+	-Reference class
+	-Examples
+	-Question List
 
-####Goal: create code to manage "User" and "Website" as piwik administer.
+
+
+###Goal: create code to manage "User" and "Website" as piwik administer.
 more info:  
 	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
-#####Detail and Functions in the script might include:
+###Detail and Functions in the script might include:
 1. New piwik user creation  
 2. Piwik user account management (add,edit,delete)  
 3. Superuser can assign administration authority to lower user  
@@ -15,13 +26,15 @@ more info:
   
 **Attention: when there is new website added to piwik tracking, need to generate tracking code for new website
 
-##Key notes:
+###Key notes:
 The function of this project should include: 
    
 1. Access piwik database to add or modify the correspond table (Database management)  
 2. Call related piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
 3. more....  
 
+
+###Piwik API call
 
 **following modal/API might be use in the project:
 
@@ -52,7 +65,7 @@ The function of this project should include:
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
-####Database
+###Database
 ######User database
 **"piwik_user":**
 The table of "piwik_user" in database stores user information include:
@@ -88,10 +101,10 @@ The table of "piwik_site" in database stores website information include:
 16. keep_url_fragment
 ``````````````````````````````````````````````
 
-##Reference class  
+###Reference class  
 *Those class is necessary for reference!
 
-### User Manager:
+#### User Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php** 
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php** 
 
@@ -172,7 +185,7 @@ isUserTheOnlyUserHavingSuperUserAccess($userLogin)
 getTokenAuth($userLogin, $md5Password)  
 `````````````````````````````````````````````````````````  
 
-### Website Manager:
+#### Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
 
@@ -298,23 +311,6 @@ C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
 
             $permResponse = $httpClient->request();	
 ```````````````````````````````````````````````````````````````````
-
-	
-####Other file might related with user account management in "plugin" folder
-
-	Dashboard 
-	Login 
-
-####Question：
-1.  
-In C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\....  
-   and C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....   
-What's the relationshoip between API.php and Model.php ?
-
-2. What's controller.php's role?
-
-3. Each user(not Superuser) will have a limited permission for accessing different website, so where this info store?
-
 ####So now my ideas is: is it just need to simply create a script for inserting or modifying sql commend for "user" and "website" table that as finish user/website management?   
 (User/Website operation in Piwik UI == User/website database operation???)
 
@@ -676,3 +672,19 @@ $mysqli->close();
 
 </html>
 ````````````````````````````````````````````````````````````````
+	
+####Other file might related with user account management in "plugin" folder
+
+	Dashboard 
+	Login 
+
+####Question：
+1.  
+In C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\....  
+   and C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....   
+What's the relationshoip between API.php and Model.php ?
+
+2. What's controller.php's role?
+
+3. Each user(not Superuser) will have a limited permission for accessing different website, so where this info store?
+
