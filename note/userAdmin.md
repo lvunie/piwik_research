@@ -183,7 +183,8 @@ checkAccessType($access)
 isUserTheOnlyUserHavingSuperUserAccess($userLogin)  
 getTokenAuth($userLogin, $md5Password)  
 `````````````````````````````````````````````````````````  
---------------------------------------------------------------------------------------------------------------------
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #### Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
