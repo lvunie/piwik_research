@@ -52,6 +52,41 @@ The function of this project should include:
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
+####Database
+######User database
+**"piwik_user":**
+The table of "piwik_user" in database stores user information include:
+````````````````````````````````````````
+1. login
+2. password
+3. alias
+4. email
+5. token_auth
+6. superuser_access
+7. date_registered
+``````````````````````````````````````````````
+
+###### Website database
+**"piwik_site":**
+The table of "piwik_site" in database stores website information include:
+``````````````````````````````````
+1. idsite
+2. name
+3. main_url
+4. ts_created
+5. ecommerce
+6. sitesearch
+7. sitesearch_keyword_parameters
+8. sitesearch_category_parameters
+9. timezone
+10. currency
+11. excluded_ips
+12. excluded_parameters
+13. excluded_user_agents
+14. group
+15. type
+16. keep_url_fragment
+``````````````````````````````````````````````
 
 ##Reference class  
 *Those class is necessary for reference!
@@ -218,41 +253,6 @@ setGlobalExcludedIps($excludedIps)
 setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ......
 `````````````````````````````````````````````````````````````  
-####Database
-######User database
-**"piwik_user":**
-The table of "piwik_user" in database stores user information include:
-````````````````````````````````````````
-1. login
-2. password
-3. alias
-4. email
-5. token_auth
-6. superuser_access
-7. date_registered
-``````````````````````````````````````````````
-
-###### Website database
-**"piwik_site":**
-The table of "piwik_site" in database stores website information include:
-``````````````````````````````````
-1. idsite
-2. name
-3. main_url
-4. ts_created
-5. ecommerce
-6. sitesearch
-7. sitesearch_keyword_parameters
-8. sitesearch_category_parameters
-9. timezone
-10. currency
-11. excluded_ips
-12. excluded_parameters
-13. excluded_user_agents
-14. group
-15. type
-16. keep_url_fragment
-``````````````````````````````````````````````
 
 ####**Other related example or files:**
 
