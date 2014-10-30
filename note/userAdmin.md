@@ -2,9 +2,10 @@
 ######Project goal	
 ######Script detail and function
 ######Key notes
-######Related API Reference
+######Piwik API Reference
 ######Database
 ######Class and Function Reference 
+######API Class Detail
 ######Examples
 ######Question List
 
