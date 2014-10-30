@@ -270,7 +270,7 @@ addSite($siteName,
 ......
 `````````````````````````````````````````````````````````````  
 
-##[Operation detail]
+##[API Class Detail]
 ######addUser(API):
 `````````````````````````````````````
 1. check superuser
