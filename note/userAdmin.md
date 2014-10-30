@@ -16,7 +16,8 @@ more info:
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 ##[Usage]
-Detail and Functions in the script might include:
+Detail and Functions in the script might include:  
+
 1. New piwik user creation  
 2. Piwik user account management (add,edit,delete)  
 3. Superuser can assign administration authority to lower user  
