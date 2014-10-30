@@ -281,7 +281,7 @@ addSite($siteName, ....)
 10. Piwik::postEvent('UsersManager.addUser.end', array($userLogin, $email, $password, $alias));(????)
 ``````````````````````````````````````````````````
 
-######updateUser(modify user information)
+######updateUser(to modify user information)
 ````````````````````
 .........
 ```````````````````````````
