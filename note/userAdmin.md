@@ -679,14 +679,12 @@ Other file might related with user account management in "plugin" folder
 	Login 
 
 ##[Question sum up]：
-1.  
-In C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\....  
-   and C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....   
-What's the relationshoip between API.php and Model.php ?
+1. What's the relationshoip between API.php and Model.php for both siteManager and userManager?
 
-2. What's controller.php's role?
+2. controller.php's?
 
 3. Each user(not Superuser) will have a limited permission for accessing different website, so where this info store?
+(check "setUserAccess" function in C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php  )
 
 4.So now my ideas is: is it just need to simply create a script for inserting or modifying sql commend for "user" and "website" table that as finish user/website management?   
 (User/Website operation in Piwik UI == User/website database operation???)
