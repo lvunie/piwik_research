@@ -110,7 +110,7 @@ The table of "piwik_site" in database stores website information include:
 ##[Important Class For Reference]  
 *Those classes/script are necessary for reference!
 
-#### User Manager:
+#### For User Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php** 
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php** 
 
@@ -193,7 +193,7 @@ getTokenAuth($userLogin, $md5Password)
 `````````````````````````````````````````````````````````  
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#### Website Manager:
+#### For Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\API.php**
 
