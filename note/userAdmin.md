@@ -1,10 +1,10 @@
 ##Menu
 ######Project goal	
-######Function detail
+######Script detail and function
 ######Key notes
-######Related API detail
+######Related API Reference
 ######Database
-######Reference class
+######Class and Function Reference 
 ######Examples
 ######Question List
 
@@ -22,18 +22,18 @@ more info:
 5. Other website setting option  
 6. "user" associate "website", with permission to view data, information  
 7.  ...more?  
-  
-**Attention: when there is new website added to piwik tracking, need to generate tracking code for new website
+
 
 ##[Key notes]:
 The function of this project should include: 
    
 1. Access piwik database to add or modify the correspond table (Database management)  
 2. Call related piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
-3. more....  
+3. when there is new website added to piwik tracking, need to generate tracking code for new website
+4. more....  
 
 
-##[Piwik API call]
+##[Piwik API reference]
 
 **following modal/API might be use in the project:
 
@@ -100,7 +100,7 @@ The table of "piwik_site" in database stores website information include:
 16. keep_url_fragment
 ``````````````````````````````````````````````
 
-##[Reference class]  
+##[Class Reference]  
 *Those class is necessary for reference!
 
 #### User Manager:
