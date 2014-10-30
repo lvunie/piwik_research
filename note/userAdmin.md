@@ -253,21 +253,7 @@ getSitesFromIds($idSites, $limit = false)
 getNormalizedUrls($url)
 getSitesIdFromSiteUrl($url)
 getSitesIdFromTimezones($timezones)
-addSite($siteName,
-                            $urls,
-                            $ecommerce = null,
-                            $siteSearch = null,
-                            $searchKeywordParameters = null,
-                            $searchCategoryParameters = null,
-                            $excludedIps = null,
-                            $excludedQueryParameters = null,
-                            $timezone = null,
-                            $currency = null,
-                            $group = null,
-                            $startDate = null,
-                            $excludedUserAgents = null,
-                            $keepURLFragments = null,
-                            $type = null)
+addSite($siteName, ....)
 ......
 `````````````````````````````````````````````````````````````  
 
