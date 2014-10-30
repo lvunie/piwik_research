@@ -267,6 +267,8 @@ addSite($siteName, ....)
 `````````````````````````````````````````````````````````````  
 
 ##[API Function Detail]
+
+####For the functions of "user" management
 ######addUser(API):
 `````````````````````````````````````
 1. check superuser/anonymous/user exist
@@ -307,6 +309,11 @@ addSite($siteName, ....)
 .........
 ``````````````````````````````
 
+####For the functions of "user" management
+######addSite
+```````````````````````
+.........................
+`````````````````````````
 
 ##[Example]
 **Other related example or files:**
