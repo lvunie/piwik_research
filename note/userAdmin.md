@@ -23,7 +23,7 @@ Detail and Functions in the script might include:
 3. Superuser can assign administration authority to lower user  
 4. Tracking website management (add, edit, delete )   
 5. Other website setting option  
-6. "user" associate "website", with permission to view data, information  
+6. "user" associate "website", with permission to access data, information  
 7.  ...more?  
 
 
