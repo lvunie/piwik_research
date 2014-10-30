@@ -686,7 +686,7 @@ Other file might related with user account management in "plugin" folder
 3. Each user(not Superuser) will have a limited permission for accessing different website, so where this info store?
 (check "setUserAccess" function in C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\API.php  )
 
-4.So now my ideas is: is it just need to simply create a script for inserting or modifying sql commend for "user" and "website" table that as finish user/website management?   
+4. So now my ideas is: is it just need to simply create a script for inserting or modifying sql commend for "user" and "website" table that as finish user/website management?   
 (User/Website operation in Piwik UI == User/website database operation???)
 
 5. Error "Duplicate entry '' for key 'uniq_keytoken'"
