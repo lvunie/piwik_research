@@ -269,7 +269,7 @@ addSite($siteName, ....)
 ##[API Function Detail]
 ######addUser(API):
 `````````````````````````````````````
-1. check superuser
+1. check superuser/anonymous/user exist
 2. check and get login name
 3. check and get email
 4. Verify password($_isPasswordHashed....)
@@ -278,18 +278,34 @@ addSite($siteName, ....)
 7. Call model "addUseer"
 8. Access::getInstance()->reloadAccess();(????)
 9. Cache::deleteTrackerCache();(????)
-10. Piwik::postEvent('UsersManager.addUser.end', array($userLogin, $email, $password, $alias));(????)
+10. Piwik::postEvent('UsersManager.addUser.end', array($userLogin, $email, $password, $alias));
 ``````````````````````````````````````````````````
 
 ######updateUser(to modify user information)
-````````````````````
-.........
-```````````````````````````
+`````````````````````````````
+1. check superuser/the user/anonymous
+2. get user 
+3. set password
+4. set alias
+5. set/check email
+6. model: updateUser
+7. Cache::deleteTrackerCache();?????
+8. Piwik::postEvent()
+`````````````````````````````
 
 ######deleteUser
-``````````````````````
-..........
-``````````````````````
+`````````````````````````````
+1. check superuser/anonymous/user exist
+2. condition define
+3. delete user
+4. delete access
+5. Cache::deleteTrackerCache();????
+`````````````````````````````
+
+######setUserAccess
+``````````````````````````````
+.........
+``````````````````````````````
 
 
 ##[Example]
