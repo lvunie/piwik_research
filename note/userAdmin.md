@@ -309,7 +309,7 @@ addSite($siteName, ....)
 .........
 ``````````````````````````````
 
-####For the functions of "user" management
+####For the functions of "websute" management
 ######addSite
 ```````````````````````
 .........................
