@@ -323,7 +323,7 @@ C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
             $permResponse = $httpClient->request();	
 ```````````````````````````````````````````````````````````````````
 
-####Here is a sample for showing all users from "piwik_user" table (My local's sample)
+####Here is a sample for showing all users from "piwik_user" table (sample from laptop localhost)
 ```````````````````````````````````````````````````````````````````````
 <html>
 
