@@ -267,18 +267,6 @@ addSite($siteName,
                             $excludedUserAgents = null,
                             $keepURLFragments = null,
                             $type = null)
-postUpdateWebsite($idSite)
-deleteSite($idSite)
-checkAtLeastOneUrl($urls)
-checkValidTimezone($timezone)
-checkValidCurrency($currency)
-checkAndReturnType($type)
-checkAndReturnExcludedIps($excludedIps)
-addSiteAliasUrls($idSite, $urls)
-setSiteAliasUrls($idSite, $urls = array())
-getIpsForRange($ipRange)
-setGlobalExcludedIps($excludedIps)
-setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ......
 `````````````````````````````````````````````````````````````  
 
