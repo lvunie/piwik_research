@@ -688,3 +688,5 @@ Other file might related with user account management in "plugin" folder
 
 4.So now my ideas is: is it just need to simply create a script for inserting or modifying sql commend for "user" and "website" table that as finish user/website management?   
 (User/Website operation in Piwik UI == User/website database operation???)
+
+5. Error "Duplicate entry '' for key 'uniq_keytoken'"
