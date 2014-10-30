@@ -108,7 +108,7 @@ The table of "piwik_site" in database stores website information include:
 ``````````````````````````````````````````````
 
 ##[Important Class For Reference]  
-*Those class is necessary for reference!
+*Those classes/script are necessary for reference!
 
 #### User Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\UsersManager\Model.php** 
