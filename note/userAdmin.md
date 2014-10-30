@@ -107,7 +107,7 @@ The table of "piwik_site" in database stores website information include:
 16. keep_url_fragment
 ``````````````````````````````````````````````
 
-##[Class Reference]  
+##[Important Class For Reference]  
 *Those class is necessary for reference!
 
 #### User Manager:
