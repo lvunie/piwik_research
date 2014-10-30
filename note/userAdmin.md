@@ -282,6 +282,32 @@ setGlobalSearchParameters($searchKeywordParameters, $searchCategoryParameters)
 ......
 `````````````````````````````````````````````````````````````  
 
+##[Operation detail]
+######addUser(API):
+`````````````````````````````````````
+1. check superuser
+2. check and get login name
+3. check and get email
+4. Verify password($_isPasswordHashed....)
+5. Get alias
+6. Get token_auth
+7. Call model "addUseer"
+8. Access::getInstance()->reloadAccess();(????)
+9. Cache::deleteTrackerCache();(????)
+10. Piwik::postEvent('UsersManager.addUser.end', array($userLogin, $email, $password, $alias));(????)
+``````````````````````````````````````````````````
+
+######updateUser(modify user information)
+````````````````````
+.........
+```````````````````````````
+
+######deleteUser
+``````````````````````
+..........
+``````````````````````
+
+
 ##[Example]
 **Other related example or files:**
 
@@ -680,6 +706,7 @@ Other file might related with user account management in "plugin" folder
 
 ##[Question sum up]：
 1. What's the relationshoip between API.php and Model.php for both siteManager and userManager?
+("Model.php" provide basic functions and called by "API.php")  
 
 2. controller.php's?
 
