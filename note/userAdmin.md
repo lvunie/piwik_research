@@ -260,7 +260,7 @@ addSite($siteName, ....)
 
 ####For the functions of "user" management
 
-######All get method:
+######All "get" method:
 ````````````````````````````````````
 getInstance()
 getUserPreference
@@ -336,7 +336,7 @@ getTokenAuth
 ``````````````````````````````
 
 ####For the functions of "website" management(This part is more complex!!!)
-######All get method in API.php
+######All "get" method in API.php
 ````````````````````````````````
 getJavascriptTag
 getImageTrackingCode
