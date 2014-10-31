@@ -269,6 +269,26 @@ addSite($siteName, ....)
 ##[API Function Detail]
 
 ####For the functions of "user" management
+
+######All get method:
+````````````````````````````````````
+getInstance()
+getUserPreference
+getPreferenceId
+getDefaultUserPreference
+getUsers
+getUsersLogin
+getUsersSitesFromAccess
+getUsersAccessFromSite
+getUsersWithSiteAccess
+getSitesAccessFromUser
+getUser
+getUserByEmail
+getCleanAlias
+getUsersHavingSuperUserAccess
+getTokenAuth
+`````````````````````````````````````
+
 ######addUser(API):
 `````````````````````````````````````
 1. check superuser/anonymous/user exist
