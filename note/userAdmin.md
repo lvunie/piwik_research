@@ -309,10 +309,12 @@ addSite($siteName, ....)
 .........
 ``````````````````````````````
 
-####For the functions of "websute" management
+####For the functions of "websute" management(This part is more complex!!!)
 ######addSite
 ```````````````````````
-.........................
+1. check superuser
+2. check siteName/url/siteSearch(???)
+..........
 `````````````````````````
 
 ##[Example]
@@ -349,25 +351,17 @@ C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\.....
 ####Here is a sample for showing all users from "piwik_user" table (sample from laptop localhost)
 ```````````````````````````````````````````````````````````````````````
 <html>
-
 <head>
-
 <basefont face="Arial">
-
 </head>
-
 <body>
 
 <?php
 
 // set database server access variables:
-
 $host = "localhost";
-
 $user = "piwik";
-
 $pass = "password";
-
 $db = "piwik_db_wpic";
 
 // open connection
@@ -397,31 +391,19 @@ if (mysql_num_rows($result) > 0) {
     echo "<table cellpadding=10 border=1>";
 
     while($row = mysql_fetch_row($result)) {
-
         echo "<tr>";
-
         echo "<td>".$row[0]."</td>";
-
         echo "<td>" . $row[1]."</td>";
-
         echo "<td>".$row[2]."</td>";
-		
 		echo "<td>".$row[3]."</td>";
-		
 		echo "<td>".$row[4]."</td>";
-		
 		echo "<td>".$row[5]."</td>";
-		
 		echo "<td>".$row[6]."</td>";
-
         echo "</tr>";
-
     }
 
     echo "</table>";
-
 }
-
 else {
 
     // no
@@ -441,9 +423,7 @@ mysql_free_result($result);
 mysql_close($connection);
 
 ?>
-
 </body>
-
 </html>
 
 
@@ -501,16 +481,10 @@ else {
 // form submitted
 
 // set server access variables
-
 $host = "localhost";
-
 $user = "piwik";
-
 $pass = "password";
-
-$db = "piwik_db_wpic";
-
-    
+$db = "piwik_db_wpic"; 
 
 // get form input
 
@@ -527,70 +501,46 @@ $db = "piwik_db_wpic";
 
     $connection = mysql_connect($host, $user, $pass) or die ("Unable to connect!");
 
-    
-
     // select database
 
-    mysql_select_db($db) or die ("Unable to select database!");
-
-    
+    mysql_select_db($db) or die ("Unable to select database!");    
 
     // create query
 
     $query = "INSERT INTO piwik_user (login, password, alias, email, superuser_access) VALUES ('$login', '$password','$alias','$email',0 )";
 
-    
-
     // execute query
 
     $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
 
-    
-
     // print message with ID of inserted record
 
     echo "New record inserted with ID ".mysql_insert_id();
-
-    
 
     // close connection
 
     mysql_close($connection);
 
 }
-
 ?>
-
-
 </body>
-
 </html>
 ````````````````````````````````````````````````````````````````
 ####Here is the example for deleting "user"
 
 ````````````````````````````````````````````````````````````````
 <html>
-
 <head>
-
 <basefont face="Arial">
-
 </head>
-
 <body>
-
 <?php
 
 // set server access variables
-
 $host = "localhost";
-
 $user = "piwik";
-
 $pass = "password";
-
 $db = "piwik_db_wpic";
-
 // create mysqli object
 
 // open connection
@@ -600,9 +550,7 @@ $mysqli = new mysqli($host, $user, $pass, $db);
 // check for connection errors
 
 if (mysqli_connect_errno()) {
-
     die("Unable to connect!");
-
 }
 
 // if provided, then delete that record
@@ -613,26 +561,18 @@ if (isset($_GET['login'])) {
 
     $query = "DELETE FROM piwik_user WHERE login = ".$_GET['login'];
 
-    
-
 // execute query
 
     if ($mysqli->query($query)) {
-
+	
     // print number of affected rows
-
-    echo $mysqli->affected_rows." row(s) affected";
-
+    
+	echo $mysqli->affected_rows." row(s) affected";
     }
-
     else {
-
     // print error message
-
     echo "Error in query: $query. ".$mysqli->error;
-
     }
-
 }
 
 // query to get records
@@ -655,41 +595,24 @@ if ($result = $mysqli->query($query)) {
         echo "<table cellpadding=10 border=1>";
 
         while($row = $result->fetch_array()) {
-
             echo "<tr>";
-
             echo "<td>".$row[0]."</td>";
-
             echo "<td>".$row[1]."</td>";
-
             echo "<td>".$row[2]."</td>";
-			
 			echo "<td>".$row[3]."</td>";
-			 
 			echo "<td>".$row[4]."</td>";
-			  
 			echo "<td>".$row[5]."</td>";
-
             echo "<td><a href=".$_SERVER['PHP_SELF']."?login=".$row[0].">Delete</a></td>";
-
             echo "</tr>";
-
         }
-
     }
 
     // free result set memory
-
     $result->close();
-
 }
-
 else {
-
     // print error message
-
     echo "Error in query: $query. ".$mysqli->error;
-
 }
 
 // close connection
@@ -697,11 +620,7 @@ else {
 $mysqli->close();
 
 ?>
-
-
-
 </body>
-
 </html>
 ````````````````````````````````````````````````````````````````
 	
