@@ -1,14 +1,13 @@
 ##Menu
 ######Purpose
 ######Usage
-######Notes
 ######Piwik API Reference
-######Database & Tables
+######Piwik Database & Tables
 ######Class and Function Reference 
 ######API Class Detail
 ######Examples
+######Notes
 ######Question List
-
 
 ##[Purpose]
 ######Create code to manage "User" and "Website" as piwik administer.  
@@ -17,6 +16,7 @@ more info:
 	piwik user management: (http://piwik.org/docs/manage-users)   
 	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
+	
 ##[Usage]
 Detail and Functions in the script might include:  
 
@@ -29,20 +29,9 @@ Detail and Functions in the script might include:
 7.  ...more?  
 
 
-##[Notes]:
-Here for adding idea or notes that came up during research
-
-The function of this project should include: 
-   
-1. Access piwik database to add or modify the correspond table (Database management)  
-2. Call related piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
-3. when there is new website added to piwik tracking, need to generate tracking code for new website
-4. more....  
-
-
 ##[Piwik API reference]
 
-**following modal/API is necessary to be used:
+**following modal/APIs are needed:
 
 ######For User Management:	
 - Access;(http://developer.piwik.org/api-reference/Piwik/Access)  
@@ -71,7 +60,8 @@ The function of this project should include:
 
 Here is link for API list(http://developer.piwik.org/api-reference/classes)
 
-##[Database & Tables]
+
+##[Piwik Database & Tables]
 ######User database
 **"piwik_user":**
 The table of "piwik_user" in database stores user information include:
@@ -326,7 +316,10 @@ getTokenAuth
 `````````````````````````````
 ######setSuperUserAccess
 `````````````````````````````````````
-.............................
+1. check superuser/anonymous/user exist
+2. Piwik::translate(???)
+3. model->deleteUserAccess
+4. model->setSuperUserAccess
 `````````````````````````````````````
 
 ######setUserAccess
@@ -659,6 +652,18 @@ Other file might related with user account management in "plugin" folder
 
 	Dashboard 
 	Login 
+	
+	
+##[Notes]:
+Here for adding idea or notes that came up during research
+
+The function of this project should include: 
+   
+1. Access piwik database to add or modify the correspond table (Database management)  
+2. Call related piwik API to get/set data.   *Call piwik API (http://developer.piwik.org/guides/querying-the-reporting-api)  
+3. when there is new website added to piwik tracking, need to generate tracking code for new website
+4. more....  
+
 
 ##[Question sum up]：
 1. What's the relationshoip between API.php and Model.php for both siteManager and userManager?
