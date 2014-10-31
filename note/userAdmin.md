@@ -640,3 +640,5 @@ Other file might related with user account management in "plugin" folder
 (User/Website operation in Piwik UI == User/website database operation???)
 
 5. Error "Duplicate entry '' for key 'uniq_keytoken'"
+
+6. What is "user preference"? in userManager API.php
