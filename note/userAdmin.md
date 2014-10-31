@@ -309,7 +309,7 @@ addSite($siteName, ....)
 .........
 ``````````````````````````````
 
-####For the functions of "websute" management(This part is more complex!!!)
+####For the functions of "website" management(This part is more complex!!!)
 ######addSite
 ```````````````````````
 1. check superuser
@@ -458,9 +458,6 @@ if (!isset($_POST['submit'])) {
 // form not submitted
 
 ?>
-
-
-
     <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
 
 	login: 		<input type="text" name="login">
