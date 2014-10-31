@@ -288,6 +288,7 @@ getCleanAlias
 getUsersHavingSuperUserAccess
 getTokenAuth
 `````````````````````````````````````
+(Not understand what "preference" used for???)
 
 ######addUser(API):
 `````````````````````````````````````
@@ -323,6 +324,10 @@ getTokenAuth
 4. delete access
 5. Cache::deleteTrackerCache();????
 `````````````````````````````
+######setSuperUserAccess
+`````````````````````````````````````
+.............................
+`````````````````````````````````````
 
 ######setUserAccess
 ``````````````````````````````
