@@ -10,28 +10,28 @@
 ######Question List
 
 ##[Purpose]
-######Create code to manage "User" and "Website" as piwik administer.  
+######Create code to manage "User" and "Website" as piwik administer.    
 
-more info:  
-	piwik user management: (http://piwik.org/docs/manage-users)   
-	Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
+piwik user management: (http://piwik.org/docs/manage-users)   
+Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 	
 ##[Usage]
-Detail and Functions in the script might include:  
+The usage of this project might include following functions:  
 
 1. New piwik user creation  
 2. Piwik user account management (add,edit,delete)  
-3. Superuser can assign administration authority to lower user  
+3. Superuser can assign administration authority to lower non-superuser  
 4. Tracking website management (add, edit, delete )   
 5. Other website setting option  
 6. "user" associate "website", with permission to access data, information  
 7.  ...more?  
 
+*when there is new website added to piwik tracking, need to generate tracking code for new website
 
 ##[Piwik API reference]
 
-**following modal/APIs are needed:
+**following piwik APIs are needed:
 
 ######For User Management:	
 - Access;(http://developer.piwik.org/api-reference/Piwik/Access)  
@@ -336,6 +336,44 @@ getTokenAuth
 ``````````````````````````````
 
 ####For the functions of "website" management(This part is more complex!!!)
+######All get method in API.php
+````````````````````````````````
+getJavascriptTag
+getImageTrackingCode
+getSitesFromGroup
+getSiteFromId
+getModel
+getSiteUrlsFromId
+getAllSites
+getAllSitesId
+getSitesIdWithVisits
+getSitesWithAdminAccess
+getSitesWithViewAccess
+getSitesWithAtLeastViewAccess
+getSitesIdWithAdminAccess
+getSitesIdWithViewAccess
+getSitesIdWithAtLeastViewAccess
+getSitesFromIds
+getNormalizedUrls
+getSitesIdFromSiteUrl
+getSitesIdFromTimezones
+getIpsForRange
+getSearchKeywordParametersGlobal
+getSearchCategoryParametersGlobal
+getExcludedQueryParametersGlobal
+getExcludedUserAgentsGlobal
+getKeepURLFragmentsGlobal
+getExcludedIpsGlobal
+getDefaultCurrency
+getDefaultTimezone
+getCurrencyList
+getCurrencySymbols
+getTimezonesList
+getTimezonesListUTCOffsets
+getUniqueSiteTimezones
+getPatternMatchSites
+````````````````````````````````
+
 ######addSite
 ```````````````````````
 1. check superuser
