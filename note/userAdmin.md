@@ -326,7 +326,13 @@ getTokenAuth
 
 ######setUserAccess
 ``````````````````````````````
-.........
+1. check access type
+2. check user exist
+3. check superuser/anonymous
+4. check idSites(why???)
+5. checkUserHasAdminAccess......
+6. model: deleteUserAccess
+7. check access -> Piwik::postEvent
 ``````````````````````````````
 
 ####For the functions of "website" management(This part is more complex!!!)
