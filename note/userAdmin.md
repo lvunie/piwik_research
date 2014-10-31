@@ -333,6 +333,8 @@ getTokenAuth
 5. checkUserHasAdminAccess......
 6. model: deleteUserAccess
 7. check access -> Piwik::postEvent
+8. Access::getInstance()->reloadAccess();
+9  Cache::deleteTrackerCache();
 ``````````````````````````````
 
 ####For the functions of "website" management(This part is more complex!!!)
