@@ -97,6 +97,12 @@ The table of "piwik_site" in database stores website information include:
 16. keep_url_fragment
 ``````````````````````````````````````````````
 
+###### Access premission
+```````````````````````````````````````
+1. login
+2. idsite
+3. access
+```````````````````````````````````````
 ##[Important Class For Reference]  
 *Those classes/script are necessary for reference!
 
