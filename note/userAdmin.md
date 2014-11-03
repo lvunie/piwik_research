@@ -204,44 +204,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 9  Cache::deleteTrackerCache();
 ``````````````````````````````
 
-####For the functions of "website" management(This part is more complex!!!)
-######All "get" method in API.php
-````````````````````````````````
-getJavascriptTag
-getImageTrackingCode
-getSitesFromGroup
-getSiteFromId
-getModel
-getSiteUrlsFromId
-getAllSites
-getAllSitesId
-getSitesIdWithVisits
-getSitesWithAdminAccess
-getSitesWithViewAccess
-getSitesWithAtLeastViewAccess
-getSitesIdWithAdminAccess
-getSitesIdWithViewAccess
-getSitesIdWithAtLeastViewAccess
-getSitesFromIds
-getNormalizedUrls
-getSitesIdFromSiteUrl
-getSitesIdFromTimezones
-getIpsForRange
-getSearchKeywordParametersGlobal
-getSearchCategoryParametersGlobal
-getExcludedQueryParametersGlobal
-getExcludedUserAgentsGlobal
-getKeepURLFragmentsGlobal
-getExcludedIpsGlobal
-getDefaultCurrency
-getDefaultTimezone
-getCurrencyList
-getCurrencySymbols
-getTimezonesList
-getTimezonesListUTCOffsets
-getUniqueSiteTimezones
-getPatternMatchSites
-````````````````````````````````
+####For the functions of "website" management
 
 ######addSite
 ```````````````````````
