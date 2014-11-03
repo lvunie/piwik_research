@@ -122,9 +122,7 @@ or you can list all users and websites for a given permission via "getUsersSites
 via the method "setUserAccess".
 See also the documentation about <a href='http://piwik.org/docs/manage-users/' target='_blank'>Managing Users</a> in Piwik.
 
-##[API Function Detail]
-
-####For the functions of "user" management
+####[API Function Detail]
 
 ######addUser(API):
 `````````````````````````````````````
