@@ -207,6 +207,20 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
    - [Cache::deleteTrackerCache()]
 ``````````````````````````````
 
+######setUserPreference
+``````````````````````````````````
+......
+````````````````````````````````````
+
+######isUserTheOnlyUserHavingSuperUserAccess
+``````````````````````````````````
+......
+````````````````````````````````````
+
+######getTokenAuth
+``````````````````````````````````
+......
+````````````````````````````````````
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #### For Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
@@ -227,16 +241,78 @@ The existing values can be fetched via "getExcludedIpsGlobal" and "getExcludedQu
 See also the documentation about <a href='http://piwik.org/docs/manage-websites/' target='_blank'>Managing Websites</a> in Piwik.
 
 
-
-
 ####For the functions of "website" management
 
 ######addSite
 ```````````````````````
-1. check superuser
-2. check siteName/url/siteSearch(???)
-..........
+1. check superuser      [Piwik::checkUserHasSuperUserAccess()]
+2. check siteName       [checkName]
+3. get url              [cleanParameterUrls]
+4. check url          
+	- [checkUrls]
+	- [checkAtLeastOneUrl]
+5. get site search(???) [checkSiteSearch]
+6. list(???)
+	 list($searchKeywordParameters, $searchCategoryParameters) = $this->checkSiteSearchParameters($searchKeywordParameters, $searchCategoryParameters);
+7. 	(???)  [self::checkKeepURLFragmentsValue]
+8. set/check time zone
+9. set/check currency(?)
+10. **bind()**
+	- .....
+11. set idSite          [getModel()->createSite($bind)]
+12. set urls to idSite  [insertSiteUrls]
+13. we reload the access list which doesn't yet take in consideration this new website
+	- [Access::getInstance()->reloadAccess()]
+	- [postUpdateWebsite]
+14. Triggered after a site has been added.
+	[Piwik::postEvent]
+
+return: (int) $idSite
 `````````````````````````
+######postUpdateWebsite
+````````````````````````````````
+	Site::clearCache();
+    Cache::regenerateCacheWebsiteAttributes($idSite);
+    SiteUrls::clearSitesCache();
+`````````````````````````````````
+
+######deleteSite
+``````````````````````````````````
+1. check superuser      [Piwik::checkUserHasSuperUserAccess()]
+2. get idSites 			[API::getInstance()->getSitesId()]
+3. check website ID
+4. ...
+5. delete site          [getModel()->deleteSite]
+6. we do not delete logs here on purpose (you can run these queries on the log_ tables to delete all data)
+	[Cache::deleteCacheWebsiteAttributes($idSite);]
+7. Triggered after a site has been deleted.
+	Plugins can use this event to remove site specific values or settings, such as removing all
+    goals that belong to a specific website. If you store any data related to a website you
+    should clean up that information here.
+	[Piwik::postEvent]
+
+``````````````````````````````````
+######addSiteAliasUrls
+`````````````````````````````````
+Add a list of alias Urls to the given idSite
+If some URLs given in parameter are already recorded as alias URLs for this website,
+they won't be duplicated. The 'main_url' of the website won't be affected by this method.
+
+1. check        [Piwik::checkUserHasAdminAccess]
+2. get urls 	[cleanParameterUrls]
+3. check urls   [checkUrls]
+4. init urls    [getSiteUrlsFromId]
+5. map "urls" with "urlsInit" 
+	($toInsert = array_diff($urls, $urlsInit);)
+6. [insertSiteUrls]
+7. [postUpdateWebsite]
+
+return: count($toInsert);
+````````````````````````````````
+######addSite
+######addSite
+######addSite
+
 
 ##[Example]
 **Other related example or files:**
