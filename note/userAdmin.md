@@ -189,33 +189,44 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 1. check superuser   [Piwik::checkUserHasSuperUserAccess]
 2. check Anonymous	 [checkUserIsNotAnonymous]
 3. check user exists [userExists]
-2. delete condition 
-3. delete permission check [isUserTheOnlyUserHavingSuperUserAccess]
+4. delete condition 
+5. delete permission check [isUserTheOnlyUserHavingSuperUserAccess]
 	- .....[Piwik::translate] (???)
-4. delete access 
+6. delete access 
 	- [deleteUserOnly]
 	- [deleteUserAccess]
-5. [Cache::deleteTrackerCache()](???)
+7. [Cache::deleteTrackerCache()](???)
 `````````````````````````````
 ######setSuperUserAccess
 `````````````````````````````````````
-1. check superuser/anonymous/user exist
-2. Piwik::translate(???)
-3. model->deleteUserAccess
-4. model->setSuperUserAccess
+1. check superuser   [Piwik::checkUserHasSuperUserAccess]
+2. check Anonymous	 [checkUserIsNotAnonymous]
+3. check user exists [userExists]
+4. if have superuser Authority, then [Piwik::translate]
+5. [model->deleteUserAccess] (why need delete first???)
+6. [model->setSuperUserAccess]
 `````````````````````````````````````
 
 ######setUserAccess
 ``````````````````````````````
-1. check access type
-2. check user exist
-3. check superuser/anonymous
-4. check idSites(why???)
-5. checkUserHasAdminAccess......
-6. model: deleteUserAccess
-7. check access -> Piwik::postEvent
-8. Access::getInstance()->reloadAccess();
-9  Cache::deleteTrackerCache();
+1. check access type    [checkAccessType]
+2. check user exist		[checkUserExists]
+3. check superuser		[checkUserHasNotSuperUserAccess]
+4. check anonymous && administer Authority
+4. in case idSites is all we grant access to all the websites on which the current connected user has an 'admin' access, in case the idSites is an integer we build an array
+5. check whether idSite is empty if so, "Specify at least one website ID in &idSites="
+6.  it is possible to set user access on websites only for the websites admin
+    basically an admin can give the view or the admin access to any user for the websites he manages
+	[Piwik::checkUserHasAdminAccess]
+7. Some as last method above [model: deleteUserAccess]
+8. if the access is noaccess then we don't save it as this is the default value
+   when no access are specified
+   - if can access[model->addUserAccess]
+   - if no, build array
+   - [] Piwik::postEvent
+8. we reload the access list which doesn't yet take in consideration this new user access
+   - [Access::getInstance()->reloadAccess()]
+   - [Cache::deleteTrackerCache()]
 ``````````````````````````````
 
 ####For the functions of "website" management
