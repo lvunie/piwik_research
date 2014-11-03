@@ -430,17 +430,12 @@ Clean the parameter URLs:
      - remove the trailing slashes if found
 `````````````````````````````
 
-######updateSiteCreatedTime
+######renameGroup
 `````````````````````````````
-`````````````````````````````
-
-######updateSiteCreatedTime
-`````````````````````````````
+Utility function that throws if a value is not valid for the 'keep_url_fragment'
+column of the piwik_site table.
 `````````````````````````````
 
-######updateSiteCreatedTime
-`````````````````````````````
-`````````````````````````````
 
 ##[Example]
 **Other related example or files:**
