@@ -243,7 +243,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 
 ####For the functions of "website" management
 
-######addSite
+######-- addSite
 ```````````````````````
 1. check superuser      [Piwik::checkUserHasSuperUserAccess()]
 2. check siteName       [checkName]
@@ -269,14 +269,14 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 
 return: (int) $idSite
 `````````````````````````
-######postUpdateWebsite
+######-- postUpdateWebsite
 ````````````````````````````````
 	Site::clearCache();
     Cache::regenerateCacheWebsiteAttributes($idSite);
     SiteUrls::clearSitesCache();
 `````````````````````````````````
 
-######deleteSite
+######-- deleteSite
 ``````````````````````````````````
 1. check superuser      [Piwik::checkUserHasSuperUserAccess()]
 2. get idSites 			[API::getInstance()->getSitesId()]
@@ -294,7 +294,7 @@ return: (int) $idSite
 ``````````````````````````````````
 
 
-######addSiteAliasUrls
+######-- addSiteAliasUrls
 `````````````````````````````````
 Add a list of alias Urls to the given idSite
 If some URLs given in parameter are already recorded as alias URLs for this website,
@@ -312,7 +312,7 @@ they won't be duplicated. The 'main_url' of the website won't be affected by thi
 return: count($toInsert);
 ````````````````````````````````
 
-######setSiteAliasUrls
+######-- setSiteAliasUrls
 `````````````````````````````````````
 Set the list of alias Urls for the given idSite
 Completely overwrites the current list of URLs with the provided list.
@@ -327,29 +327,29 @@ The 'main_url' of the website won't be affected by this method.
 
 return: count($urls);
 ````````````````````````````````````
-######setGlobalExcludedIps
+######-- setGlobalExcludedIps
 ````````````````````````````````````````
 Sets IPs to be excluded from all websites. IPs can contain wildcards.
 Will also apply to websites created in the future.
 ````````````````````````````````````````
 
-######setGlobalSearchParameters
+######-- setGlobalSearchParameters
 `````````````````````````````
 Sets Site Search keyword/category parameter names, to be used on websites which have not specified these values
 Expects Comma separated list of query params names
 `````````````````````````````
 
-######setGlobalExcludedUserAgents
+######-- setGlobalExcludedUserAgents
 `````````````````````````````
 Sets list of user agent substrings to look for when excluding visits. For more info,
 `````````````````````````````
 
-######setSiteSpecificUserAgentExcludeEnabled
+######-- setSiteSpecificUserAgentExcludeEnabled
 `````````````````````````````
 Sets whether it should be allowed to exclude different user agents for different websites.
 `````````````````````````````
 
-######setKeepURLFragmentsGlobal
+######-- setKeepURLFragmentsGlobal
 `````````````````````````````
     /**
      * Sets whether the default behavior should be to keep URL fragments when
@@ -360,7 +360,7 @@ Sets whether it should be allowed to exclude different user agents for different
      *                      behavior will be to remove them.
      */
 `````````````````````````````
-######setGlobalExcludedQueryParameters
+######-- setGlobalExcludedQueryParameters
 `````````````````````````````
     /**
      * Sets list of URL query parameters to be excluded on all websites.
@@ -371,17 +371,17 @@ Sets whether it should be allowed to exclude different user agents for different
      */
 `````````````````````````````
 
-######setDefaultCurrency
+######-- setDefaultCurrency
 `````````````````````````````
 Sets the default currency that will be used when creating websites
 `````````````````````````````
 
-######setDefaultTimezone
+######-- setDefaultTimezone
 `````````````````````````````
 Sets the default timezone that will be used when creating websites
 `````````````````````````````
 
-######updateSite
+######-- updateSite
 `````````````````````````````
     /**
      * Update an existing website.
@@ -413,24 +413,24 @@ Sets the default timezone that will be used when creating websites
      */
 `````````````````````````````
 
-######updateSiteCreatedTime
+######-- updateSiteCreatedTime
 `````````````````````````````
 Updates the field ts_created for the specified websites.
 `````````````````````````````
 
-######removeTrailingSlash
+######-- removeTrailingSlash
 `````````````````````````````
 Remove the final slash in the URLs if found
 `````````````````````````````
 
-######cleanParameterUrls
+######-- cleanParameterUrls
 `````````````````````````````
 Clean the parameter URLs:
      - if the parameter is a string make it an array
      - remove the trailing slashes if found
 `````````````````````````````
 
-######renameGroup
+######-- renameGroup
 `````````````````````````````
 Utility function that throws if a value is not valid for the 'keep_url_fragment'
 column of the piwik_site table.
