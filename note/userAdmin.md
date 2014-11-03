@@ -4,7 +4,6 @@
 ######Piwik API Reference
 ######Piwik Database & Tables
 ######Class and Function Reference 
-######API Class Detail
 ######Examples
 ######Notes
 ######Question List
@@ -175,6 +174,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 	- [deleteUserAccess]
 7. [Cache::deleteTrackerCache()](???)
 `````````````````````````````
+
 ######-- setSuperUserAccess
 `````````````````````````````````````
 1. check superuser   [Piwik::checkUserHasSuperUserAccess]
@@ -187,6 +187,12 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 
 ######-- setUserAccess
 ``````````````````````````````
+     * Set an access level to a given user for a list of websites ID.
+     *
+     * If access = 'noaccess' the current access (if any) will be deleted.
+     * If access = 'view' or 'admin' the current access level is deleted and updated with the new value.
+     *
+
 1. check access type    [checkAccessType]
 2. check user exist		[checkUserExists]
 3. check superuser		[checkUserHasNotSuperUserAccess]
@@ -266,6 +272,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 
 return: (int) $idSite
 `````````````````````````
+
 ######-- postUpdateWebsite
 ````````````````````````````````
 	Site::clearCache();
@@ -287,15 +294,15 @@ return: (int) $idSite
     goals that belong to a specific website. If you store any data related to a website you
     should clean up that information here.
 	[Piwik::postEvent]
-
 ``````````````````````````````````
-
 
 ######-- addSiteAliasUrls
 `````````````````````````````````
-Add a list of alias Urls to the given idSite
-If some URLs given in parameter are already recorded as alias URLs for this website,
-they won't be duplicated. The 'main_url' of the website won't be affected by this method.
+     * Add a list of alias Urls to the given idSite
+     *
+     * If some URLs given in parameter are already recorded as alias URLs for this website,
+     * they won't be duplicated. The 'main_url' of the website won't be affected by this method.
+     *
 
 1. check        [Piwik::checkUserHasAdminAccess]
 2. get urls 	[cleanParameterUrls]
