@@ -168,29 +168,34 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 1. check superuser   [Piwik::checkUserHasSuperUserAccessOrIsTheUser]
 2. check anonymous   [checkUserIsNotAnonymous]
 3. get user info     [getUser]
-3. password setting
+4. password setting
 	- if password no change, use the previous one
 	- if change, password verify  
 	[Common::unsanitizeInputValue]
 	[UsersManager::checkPassword($password)]
 	[UsersManager::getPasswordHash($password)]
 	- set "passwordHasBeenUpdated" to "true"
-4. set alias
-5. set/check email [checkEmail]
-6. Get the input value above set them to "model.php" 
-7. ??? [Cache::deleteTrackerCache()]
-8. [Piwik::postEvent()]
+5. set alias
+6. set/check email [checkEmail]
+7. Get the input value above set them to "model.php" 
+8. ??? [Cache::deleteTrackerCache()]
+9. [Piwik::postEvent()]
 	Triggered after an existing user has been updated.
     Event notify about password change.
 `````````````````````````````
 
 ######deleteUser
 `````````````````````````````
-1. check superuser/anonymous/user exist
-2. condition define
-3. delete user
-4. delete access
-5. Cache::deleteTrackerCache();????
+1. check superuser   [Piwik::checkUserHasSuperUserAccess]
+2. check Anonymous	 [checkUserIsNotAnonymous]
+3. check user exists [userExists]
+2. delete condition 
+3. delete permission check [isUserTheOnlyUserHavingSuperUserAccess]
+	- .....[Piwik::translate] (???)
+4. delete access 
+	- [deleteUserOnly]
+	- [deleteUserAccess]
+5. [Cache::deleteTrackerCache()](???)
 `````````````````````````````
 ######setSuperUserAccess
 `````````````````````````````````````
