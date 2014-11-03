@@ -209,12 +209,8 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 
 ######-- setUserPreference
 ``````````````````````````````````
-......
-````````````````````````````````````
-
-######-- isUserTheOnlyUserHavingSuperUserAccess
-``````````````````````````````````
-......
+Piwik::checkUserHasSuperUserAccessOrIsTheUser($userLogin);
+Option::set($this->getPreferenceId($userLogin, $preferenceName), $preferenceValue);
 ````````````````````````````````````
 
 ######-- getTokenAuth
