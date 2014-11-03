@@ -219,8 +219,9 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 
 ######-- getTokenAuth
 ``````````````````````````````````
-......
-````````````````````````````````````
+Generates a unique MD5 for the given login & password
+````````````````````````````````````  
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #### For Website Manager:
 **C:\xampp\htdocs\piwik\piwik\plugins\SitesManager\model.php**
