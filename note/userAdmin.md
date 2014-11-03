@@ -123,71 +123,8 @@ via the method "setUserAccess".
 See also the documentation about <a href='http://piwik.org/docs/manage-users/' target='_blank'>Managing Users</a> in Piwik.
 
 ######Class: model    
-Functions in this class
-````````````````````````````````````````````````````
-getUsers(array $userLogins)  
-getUsersLogin()  
-getUsersSitesFromAccess($access)  
-getUsersAccessFromSite($idSite)  
-getUsersLoginWithSiteAccess($idSite, $access)  
-getSitesAccessFromUser($userLogin)  
-getUser($userLogin)  
-getUserByEmail($userEmail)  
-getUserByTokenAuth($tokenAuth)  
-addUser($userLogin, $passwordTransformed, $email, $alias, $tokenAuth, $dateRegistered)   
-setSuperUserAccess($userLogin, $hasSuperUserAccess)  
-getUsersHavingSuperUserAccess()  
-updateUser($userLogin, $password, $email, $alias, $tokenAuth)  
-userExists($userLogin)  
-userEmailExists($userEmail)  
-addUserAccess($userLogin, $access, $idSites)  
-deleteUserOnly($userLogin)  
-deleteUserAccess($userLogin, $idSites = null)  
-getDb()  
-``````````````````````````````````````````````
 
-######Class: API  
-Functions in this class  
-``````````````````````````````````````````````
-// get preference  
-setUserPreference($userLogin, $preferenceName, $preferenceValue)  
-getUserPreference($userLogin, $preferenceName)  
-getPreferenceId($login, $preference)  
-getDefaultUserPreference($preferenceName, $login)  
-
-// user login  
-getUsers($userLogins = '')  
-getUsersLogin()  
-getUsersSitesFromAccess($access)  
-getUsersAccessFromSite($idSite)  
-getUsersWithSiteAccess($idSite, $access)  
-getSitesAccessFromUser($userLogin)  
-getUser($userLogin)  
-getUserByEmail($userEmail)  
-checkLogin($userLogin)  
-checkEmail($email)  
-getCleanAlias($alias, $userLogin)  
-
-//user operation  
-addUser($userLogin, $password, $email, $alias = false, $_isPasswordHashed = false)  
-setSuperUserAccess($userLogin, $hasSuperUserAccess)  
-hasSuperUserAccess()  
-getUsersHavingSuperUserAccess()  
-updateUser($userLogin, $password = false, $email = false, $alias = false, $_isPasswordHashed = false)  
-deleteUser($userLogin)  
-  
-// user status   
-userExists($userLogin)  
-userEmailExists($userEmail)  
-setUserAccess($userLogin, $access, $idSites)  
-checkUserExists($userLogin)  
-checkUserEmailExists($userEmail)  
-checkUserIsNotAnonymous($userLogin)  
-checkUserHasNotSuperUserAccess($userLogin)  
-checkAccessType($access)  
-isUserTheOnlyUserHavingSuperUserAccess($userLogin)  
-getTokenAuth($userLogin, $md5Password)  
-`````````````````````````````````````````````````````````  
+######Class: API   
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #### For Website Manager:
@@ -210,58 +147,9 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 
 	
 ######Class: Model  
-Functions in this class
-`````````````````````````````````````````````````````````
-createSite($site)
-getSitesFromGroup($group)
-getSitesGroups()
-getAllSites()
-getSitesWithVisits($time, $now)
-getAllSitesIdFromSiteUrl($url, $urlBis)
-getSitesIdFromSiteUrlHavingAccess($url, $urlBis, $login)
-getSitesFromTimezones($timezones)
-deleteSite($idSite)
-getSitesFromIds($idSites, $limit = false)
-getSiteFromId($idSite)
-getSitesId()
-getSiteUrlsFromId($idSite)
-getAliasSiteUrlsFromId($idSite)
-updateSite($site, $idSite)
-getUniqueSiteTimezones()
-updateSiteCreatedTime($idSites, $minDateSql)
-insertSiteUrl($idSite, $url)
-getPatternMatchSites($ids, $pattern, $limit)
-deleteSiteAliasUrls($idsite)
-getDb()
 
-`````````````````````````````````````````````````````````
+######Class: API 
 
-######Class: API (too many, no need to display all here)  
-Part of important functions in this class
-```````````````````````````````````````````````````````````
-getImageTrackingCode($idSite, $piwikUrl = '', $actionName = false, $idGoal = false, $revenue = false)
-getSitesFromGroup($group) 
-getSitesGroups()
-getSiteFromId($idSite)
-getModel() ???????
-getSiteUrlsFromId($idSite)
-getSitesId()
-getAllSites()
-getAllSitesId()
-getSitesIdWithVisits($timestamp = false)
-getSitesWithAdminAccess($fetchAliasUrls = false)
-getSitesWithViewAccess()
-getSitesWithAtLeastViewAccess($limit = false, $_restrictSitesToLogin = false)
-getSitesIdWithAdminAccess()
-getSitesIdWithViewAccess()
-getSitesIdWithAtLeastViewAccess($_restrictSitesToLogin = false)
-getSitesFromIds($idSites, $limit = false)
-getNormalizedUrls($url)
-getSitesIdFromSiteUrl($url)
-getSitesIdFromTimezones($timezones)
-addSite($siteName, ....)
-......
-`````````````````````````````````````````````````````````````  
 
 ##[API Function Detail]
 
