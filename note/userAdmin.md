@@ -413,7 +413,32 @@ Sets the default timezone that will be used when creating websites
      */
 `````````````````````````````
 
-######addSite
+######updateSiteCreatedTime
+`````````````````````````````
+Updates the field ts_created for the specified websites.
+`````````````````````````````
+
+######removeTrailingSlash
+`````````````````````````````
+Remove the final slash in the URLs if found
+`````````````````````````````
+
+######cleanParameterUrls
+`````````````````````````````
+Clean the parameter URLs:
+     - if the parameter is a string make it an array
+     - remove the trailing slashes if found
+`````````````````````````````
+
+######updateSiteCreatedTime
+`````````````````````````````
+`````````````````````````````
+
+######updateSiteCreatedTime
+`````````````````````````````
+`````````````````````````````
+
+######updateSiteCreatedTime
 `````````````````````````````
 `````````````````````````````
 
