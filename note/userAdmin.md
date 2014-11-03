@@ -104,7 +104,7 @@ The table of "piwik_site" in database stores website information include:
 3. access
 ```````````````````````````````````````
 
-##[Important Class For Reference]  
+##[Classes & Function Detail]  
 *Those classes/script are necessary for reference!
 
 #### For User Manager:
