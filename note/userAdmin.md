@@ -122,9 +122,9 @@ or you can list all users and websites for a given permission via "getUsersSites
 via the method "setUserAccess".
 See also the documentation about <a href='http://piwik.org/docs/manage-users/' target='_blank'>Managing Users</a> in Piwik.
 
-####[API Function Detail]
+####[Function Detail]
 
-######addUser(API):
+######-- addUser(API):
 `````````````````````````````````````
 1. check superuser   [Piwik::checkUserHasSuperUserAccess()]
 2. check user exists [checkLogin]
@@ -141,7 +141,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 10. Triggered after a new user is created.  [Piwik::postEvent]
 ``````````````````````````````````````````````````
 
-######updateUser(to modify user information)
+######-- updateUser(to modify user information)
 `````````````````````````````
 1. check superuser   [Piwik::checkUserHasSuperUserAccessOrIsTheUser]
 2. check anonymous   [checkUserIsNotAnonymous]
@@ -162,7 +162,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
     Event notify about password change.
 `````````````````````````````
 
-######deleteUser
+######-- deleteUser
 `````````````````````````````
 1. check superuser   [Piwik::checkUserHasSuperUserAccess]
 2. check Anonymous	 [checkUserIsNotAnonymous]
@@ -175,7 +175,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 	- [deleteUserAccess]
 7. [Cache::deleteTrackerCache()](???)
 `````````````````````````````
-######setSuperUserAccess
+######-- setSuperUserAccess
 `````````````````````````````````````
 1. check superuser   [Piwik::checkUserHasSuperUserAccess]
 2. check Anonymous	 [checkUserIsNotAnonymous]
@@ -185,7 +185,7 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
 6. [model->setSuperUserAccess]
 `````````````````````````````````````
 
-######setUserAccess
+######-- setUserAccess
 ``````````````````````````````
 1. check access type    [checkAccessType]
 2. check user exist		[checkUserExists]
@@ -207,17 +207,17 @@ See also the documentation about <a href='http://piwik.org/docs/manage-users/' t
    - [Cache::deleteTrackerCache()]
 ``````````````````````````````
 
-######setUserPreference
+######-- setUserPreference
 ``````````````````````````````````
 ......
 ````````````````````````````````````
 
-######isUserTheOnlyUserHavingSuperUserAccess
+######-- isUserTheOnlyUserHavingSuperUserAccess
 ``````````````````````````````````
 ......
 ````````````````````````````````````
 
-######getTokenAuth
+######-- getTokenAuth
 ``````````````````````````````````
 ......
 ````````````````````````````````````
@@ -241,7 +241,7 @@ The existing values can be fetched via "getExcludedIpsGlobal" and "getExcludedQu
 See also the documentation about <a href='http://piwik.org/docs/manage-websites/' target='_blank'>Managing Websites</a> in Piwik.
 
 
-####For the functions of "website" management
+####Functions for "website" management
 
 ######-- addSite
 ```````````````````````
