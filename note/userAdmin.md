@@ -160,19 +160,28 @@ See also the documentation about <a href='http://piwik.org/docs/manage-websites/
 7. Get the input value above sent them to "model.php" 
 8. Set user access   [Access::getInstance()->reloadAccess()](????)
 9. ????              [Cache::deleteTrackerCache()]
-10. ????             [Piwik::postEvent]
+10. Triggered after a new user is created.  [Piwik::postEvent]
 ``````````````````````````````````````````````````
 
 ######updateUser(to modify user information)
 `````````````````````````````
-1. check superuser/the user/anonymous
-2. get user 
-3. set password
+1. check superuser   [Piwik::checkUserHasSuperUserAccessOrIsTheUser]
+2. check anonymous   [checkUserIsNotAnonymous]
+3. get user info     [getUser]
+3. password setting
+	- if password no change, use the previous one
+	- if change, password verify  
+	[Common::unsanitizeInputValue]
+	[UsersManager::checkPassword($password)]
+	[UsersManager::getPasswordHash($password)]
+	- set "passwordHasBeenUpdated" to "true"
 4. set alias
-5. set/check email
-6. model: updateUser
-7. Cache::deleteTrackerCache();?????
-8. Piwik::postEvent()
+5. set/check email [checkEmail]
+6. Get the input value above set them to "model.php" 
+7. ??? [Cache::deleteTrackerCache()]
+8. [Piwik::postEvent()]
+	Triggered after an existing user has been updated.
+    Event notify about password change.
 `````````````````````````````
 
 ######deleteUser
