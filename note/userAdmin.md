@@ -318,9 +318,11 @@ return: count($toInsert);
 
 ######-- setSiteAliasUrls
 `````````````````````````````````````
-Set the list of alias Urls for the given idSite
-Completely overwrites the current list of URLs with the provided list.
-The 'main_url' of the website won't be affected by this method.
+     * Set the list of alias Urls for the given idSite
+     *
+     * Completely overwrites the current list of URLs with the provided list.
+     * The 'main_url' of the website won't be affected by this method.
+     *
 
 1. check             [Piwik::checkUserHasAdminAccess]
 2. get urls 	     [cleanParameterUrls]
