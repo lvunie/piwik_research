@@ -292,6 +292,8 @@ return: (int) $idSite
 	[Piwik::postEvent]
 
 ``````````````````````````````````
+
+
 ######addSiteAliasUrls
 `````````````````````````````````
 Add a list of alias Urls to the given idSite
@@ -309,10 +311,111 @@ they won't be duplicated. The 'main_url' of the website won't be affected by thi
 
 return: count($toInsert);
 ````````````````````````````````
-######addSite
-######addSite
-######addSite
 
+######setSiteAliasUrls
+`````````````````````````````````````
+Set the list of alias Urls for the given idSite
+Completely overwrites the current list of URLs with the provided list.
+The 'main_url' of the website won't be affected by this method.
+
+1. check             [Piwik::checkUserHasAdminAccess]
+2. get urls 	     [cleanParameterUrls]
+3. check urls        [checkUrls]
+4. delete alias urls [getModel()->deleteSiteAliasUrls]
+5. [insertSiteUrls]
+6. [postUpdateWebsite]
+
+return: count($urls);
+````````````````````````````````````
+######setGlobalExcludedIps
+````````````````````````````````````````
+Sets IPs to be excluded from all websites. IPs can contain wildcards.
+Will also apply to websites created in the future.
+````````````````````````````````````````
+
+######setGlobalSearchParameters
+`````````````````````````````
+Sets Site Search keyword/category parameter names, to be used on websites which have not specified these values
+Expects Comma separated list of query params names
+`````````````````````````````
+
+######setGlobalExcludedUserAgents
+`````````````````````````````
+Sets list of user agent substrings to look for when excluding visits. For more info,
+`````````````````````````````
+
+######setSiteSpecificUserAgentExcludeEnabled
+`````````````````````````````
+Sets whether it should be allowed to exclude different user agents for different websites.
+`````````````````````````````
+
+######setKeepURLFragmentsGlobal
+`````````````````````````````
+    /**
+     * Sets whether the default behavior should be to keep URL fragments when
+     * tracking or not.
+     *
+     * @param $enabled bool If true, the default behavior will be to keep URL
+     *                      fragments when tracking. If false, the default
+     *                      behavior will be to remove them.
+     */
+`````````````````````````````
+######setGlobalExcludedQueryParameters
+`````````````````````````````
+    /**
+     * Sets list of URL query parameters to be excluded on all websites.
+     * Will also apply to websites created in the future.
+     *
+     * @param string $excludedQueryParameters Comma separated list of URL query parameters to exclude from URLs
+     * @return bool
+     */
+`````````````````````````````
+
+######setDefaultCurrency
+`````````````````````````````
+Sets the default currency that will be used when creating websites
+`````````````````````````````
+
+######setDefaultTimezone
+`````````````````````````````
+Sets the default timezone that will be used when creating websites
+`````````````````````````````
+
+######updateSite
+`````````````````````````````
+    /**
+     * Update an existing website.
+     * If only one URL is specified then only the main url will be updated.
+     * If several URLs are specified, both the main URL and the alias URLs will be updated.
+     *
+     * @param int $idSite website ID defining the website to edit
+     * @param string $siteName website name
+     * @param string|array $urls the website URLs
+     * @param int $ecommerce Whether Ecommerce is enabled, 0 or 1
+     * @param null|int $siteSearch Whether site search is enabled, 0 or 1
+     * @param string $searchKeywordParameters Comma separated list of search keyword parameter names
+     * @param string $searchCategoryParameters Comma separated list of search category parameter names
+     * @param string $excludedIps Comma separated list of IPs to exclude from being tracked (allows wildcards)
+     * @param null|string $excludedQueryParameters
+     * @param string $timezone Timezone
+     * @param string $currency Currency code
+     * @param string $group Group name where this website belongs
+     * @param string $startDate Date at which the statistics for this website will start. Defaults to today's date in YYYY-MM-DD format
+     * @param null|string $excludedUserAgents
+     * @param int|null $keepURLFragments If 1, URL fragments will be kept when tracking. If 2, they
+     *                                   will be removed. If 0, the default global behavior will be used.
+     * @param string $type The Website type, default value is "website"
+     * @throws Exception
+     * @see getKeepURLFragmentsGlobal. If null, the existing value will
+     *                                   not be modified.
+     *
+     * @return bool true on success
+     */
+`````````````````````````````
+
+######addSite
+`````````````````````````````
+`````````````````````````````
 
 ##[Example]
 **Other related example or files:**
