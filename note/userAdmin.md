@@ -103,6 +103,7 @@ The table of "piwik_site" in database stores website information include:
 2. idsite
 3. access
 ```````````````````````````````````````
+
 ##[Important Class For Reference]  
 *Those classes/script are necessary for reference!
 
@@ -266,38 +267,21 @@ addSite($siteName, ....)
 
 ####For the functions of "user" management
 
-######All "get" method:
-````````````````````````````````````
-getInstance()
-getUserPreference
-getPreferenceId
-getDefaultUserPreference
-getUsers
-getUsersLogin
-getUsersSitesFromAccess
-getUsersAccessFromSite
-getUsersWithSiteAccess
-getSitesAccessFromUser
-getUser
-getUserByEmail
-getCleanAlias
-getUsersHavingSuperUserAccess
-getTokenAuth
-`````````````````````````````````````
-(Not understand what "preference" used for???)
-
 ######addUser(API):
 `````````````````````````````````````
-1. check superuser/anonymous/user exist
-2. check and get login name
-3. check and get email
-4. Verify password($_isPasswordHashed....)
-5. Get alias
-6. Get token_auth
-7. Call model "addUseer"
-8. Access::getInstance()->reloadAccess();(????)
-9. Cache::deleteTrackerCache();(????)
-10. Piwik::postEvent('UsersManager.addUser.end', array($userLogin, $email, $password, $alias));
+1. check superuser   [Piwik::checkUserHasSuperUserAccess()]
+2. check user exists [checkLogin]
+3. check vaild email [checkEmail]
+4. Verify password   (valid input & password transfer to "TokenAuth" )
+	- [Common::unsanitizeInputValue($password)]
+	- [UsersManager::checkPassword($password)]
+	- [UsersManager::getPasswordHash($password)]
+5. Get alias         [getCleanAlias]
+6. Get token_auth    [getTokenAuth]
+7. Get the input value above sent them to "model.php" 
+8. Set user access   [Access::getInstance()->reloadAccess()](????)
+9. ????              [Cache::deleteTrackerCache()]
+10. ????             [Piwik::postEvent]
 ``````````````````````````````````````````````````
 
 ######updateUser(to modify user information)
