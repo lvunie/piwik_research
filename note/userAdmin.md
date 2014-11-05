@@ -9,7 +9,7 @@
 ######Question List
 
 ##[Purpose]
-######Basicly this task is to use curl to write a script to auomatically login piwik and create use  
+######Basicly this task is to use curl to write a script to auomatically login piwik and create user  
 
 piwik user management: (http://piwik.org/docs/manage-users)   
 Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
