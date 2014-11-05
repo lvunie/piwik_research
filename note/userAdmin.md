@@ -26,7 +26,7 @@ Functions in script include:
 1. Piwik user account management (add,edit,delete)    
 2. user access permission assign  
 3. Tracking website management (add, edit, delete)     
-4. Might have other website setting option     
+4. Might have other website setting options    
 5.  ...more?    
 
 *when there is new website added to piwik tracking, need to generate tracking code for new website
@@ -76,13 +76,13 @@ The table of "piwik_user" in database stores user information include:
 6. superuser_access
 7. date_registered
 ``````````````````````````````````````````````
-login:      		user name
-password:   		user login password
-alias:      		user alias that used in piwik
-email:      		user email address
-token_aith: 		......
-superuser_access: 	0 or 1
-date_registered: 	.....
+login:      		user name  
+password:   		user login password  
+alias:      		user alias that used in piwik  
+email:      		user email address  
+token_aith: 		......  
+superuser_access: 	0 or 1  
+date_registered: 	.....  
 
 ###### Website database
 **"piwik_site":**
@@ -115,10 +115,10 @@ The table of "piwik_site" in database stores website information include:
 2. idsite
 3. access
 ```````````````````````````````````````
-login:  user name
-idsite: website index
-access: access status for correspond website
-
+login:  user name  
+idsite: website index  
+access: access status for correspond website  
+  
 **default value is "no access" in access item, 
 
 
