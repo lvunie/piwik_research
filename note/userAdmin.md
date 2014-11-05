@@ -15,20 +15,18 @@ piwik user management: (http://piwik.org/docs/manage-users)
 Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 So this project is mainly include in two part:
-1. write some scripts that call piwik API to do "add", "delete", "access" ect operation
-for both USER/WEBSITE administration.
+1. write some scripts that call piwik API to do "add", "delete", "access" ect functions in piwik
+both USER/WEBSITE administration.
 2. use "curl" command to run those scripts
 	
 ##[Usage]
-The usage of this project might include following functions:  
+Functions in script include:  
 
-1. New piwik user creation  
-2. Piwik user account management (add,edit,delete)  
-3. Superuser can assign administration authority to lower non-superuser  
-4. Tracking website management (add, edit, delete )   
-5. Other website setting option  
-6. "user" associate "website", with permission to access data, information  
-7.  ...more?  
+1. Piwik user account management (add,edit,delete)  
+2. user access permission assign
+3. Tracking website management (add, edit, delete)   
+4. Might have other website setting option   
+5.  ...more?  
 
 *when there is new website added to piwik tracking, need to generate tracking code for new website
 
