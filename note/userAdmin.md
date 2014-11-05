@@ -9,7 +9,7 @@
 ######Question List
 
 ##[Purpose]
-######Create code to manage "User" and "Website" as piwik administer.    
+######Basicly this task is to use curl to write a script to auomatically login piwik and create use  
 
 piwik user management: (http://piwik.org/docs/manage-users)   
 Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
@@ -123,7 +123,6 @@ The table of "piwik_site" in database stores website information include:
 	
 ```````````````````````````````````````
 
-  
 **default value is "no access" in access item, 
 
 
