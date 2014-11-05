@@ -120,6 +120,7 @@ The table of "piwik_site" in database stores website information include:
 	login:  user name  
 	idsite: website index  
 	access: access status for correspond website  
+	
 ```````````````````````````````````````
 
   
