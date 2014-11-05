@@ -75,14 +75,16 @@ The table of "piwik_user" in database stores user information include:
 5. token_auth
 6. superuser_access
 7. date_registered
+
+	login:      		user name  
+	password:   		user login password  
+	alias:      		user alias that used in piwik  
+	email:      		user email address  
+	token_aith: 		......  
+	superuser_access: 	0 or 1  
+	date_registered: 	.....  
+
 ``````````````````````````````````````````````
-login:      		user name  
-password:   		user login password  
-alias:      		user alias that used in piwik  
-email:      		user email address  
-token_aith: 		......  
-superuser_access: 	0 or 1  
-date_registered: 	.....  
 
 ###### Website database
 **"piwik_site":**
@@ -114,10 +116,12 @@ The table of "piwik_site" in database stores website information include:
 1. login
 2. idsite
 3. access
+
+	login:  user name  
+	idsite: website index  
+	access: access status for correspond website  
 ```````````````````````````````````````
-login:  user name  
-idsite: website index  
-access: access status for correspond website  
+
   
 **default value is "no access" in access item, 
 
