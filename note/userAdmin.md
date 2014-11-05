@@ -15,7 +15,7 @@ piwik user management: (http://piwik.org/docs/manage-users)
 Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
 
 So this project is mainly include in two part:  
-1. write some scripts that call piwik API to do "add", "delete", "access" ect functions in piwik
+1. write scripts to call piwik API for "add", "delete", "access" ect functions in piwik
 both USER/WEBSITE administration.  
 2. use "curl" command to run those scripts
 	
