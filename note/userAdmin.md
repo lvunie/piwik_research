@@ -22,11 +22,11 @@ both USER/WEBSITE administration.
 ##[Usage]
 Functions in script include:  
 
-1. Piwik user account management (add,edit,delete)  
-2. user access permission assign
-3. Tracking website management (add, edit, delete)   
-4. Might have other website setting option   
-5.  ...more?  
+1. Piwik user account management (add,edit,delete)    
+2. user access permission assign  
+3. Tracking website management (add, edit, delete)     
+4. Might have other website setting option     
+5.  ...more?    
 
 *when there is new website added to piwik tracking, need to generate tracking code for new website
 
