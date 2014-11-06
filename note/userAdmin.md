@@ -9,7 +9,7 @@
 ######Question List
 
 ##[Purpose]
-######Basicly this task is to use curl to write a script to auomatically login piwik and create user  
+######Basically this task is to use curl to write a script to automatically login piwik and create user  
 
 piwik user management: (http://piwik.org/docs/manage-users)   
 Analytics Web API :    (http://piwik.org/docs/analytics-api/)  
@@ -18,7 +18,7 @@ So this project is mainly include in two part:
   
 1. write scripts to call piwik API for "add", "delete", "access" ect functions in piwik
 both USER/WEBSITE administration.  
-2. use "curl" command to run those scripts
+2. use "curl" command to do them       
 	
 ##[Usage]
 Functions in script include:  
@@ -106,9 +106,12 @@ The table of "piwik_site" in database stores website information include:
 14. group
 15. type
 16. keep_url_fragment
+
+	.......
+	
 ``````````````````````````````````````````````
 
-.......
+
 
 ###### Access premission
 **piwik_access**
