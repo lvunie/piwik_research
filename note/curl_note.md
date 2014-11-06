@@ -34,5 +34,6 @@ curl -c common.cookie http://lvunie.wpic-demo.com/piwik/
 
 check the output, find: <input type="hidden" name="form_nonce" id="login_form_nonce" value="89dcb335d1ff3f2f477f5f9f7a79ccc8"/> remember the value.
 
+then:
 curl -L -b common.cookie -d form_nonce=89dcb335d1ff3f2f477f5f9f7a79ccc8 -d form_login=lvunie -d form_password=your password -e "http://lvunie.wpic-demo.com/piwik/index.php?module=CoreHome&action=" http://lvunie.wpic-demo.com/piwik/index.php?module=CoreHome&action=
 ``````````````````````````````````````````````````````````````````````
