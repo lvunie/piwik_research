@@ -44,6 +44,18 @@ then:
 curl -L -b common.cookie -d form_nonce=89dcb335d1ff3f2f477f5f9f7a79ccc8 -d form_login=lvunie -d form_password=(your password) -e "http://lvunie.wpic-demo.com/piwik/index.php?module=CoreHome&action=" http://lvunie.wpic-demo.com/piwik/index.php?module=CoreHome&action=
 ``````````````````````````````````````````````````````````````````````
 
+
+go to user setting:
+`````````````````````````````````````````````````````````
+######From homepage to setting menu:
+index.php?module=UsersManager&amp;action=userSettings&amp;idSite=1&amp;period=day&amp;date=yesterday
+
+######From setting to user administration:
+index.php?module=UsersManager&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday'
+
+
+`````````````````````````````````````````````````````````
+
 -------------------------------------------------------------------------------------------
 ##Question:
 
