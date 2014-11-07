@@ -53,7 +53,8 @@ index.php?module=UsersManager&amp;action=userSettings&amp;idSite=1&amp;period=da
 ######From setting to user administration:
 index.php?module=UsersManager&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday'
 
-
+######From setting to website administration:
+index.php?module=SitesManager&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday
 `````````````````````````````````````````````````````````
 
 -------------------------------------------------------------------------------------------
