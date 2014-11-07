@@ -7,7 +7,8 @@ http://curl.haxx.se/docs/manpage.html
 the data previously received from the server in a "Set-Cookie:" line. 
 The data should be in the format "NAME1=VALUE1; NAME2=VALUE2"
 
-####-c (common.cookie)  write current operation to cookie
+####-c (common.cookie)  
+write current operation to cookie
 
 ####-d  
 (HTTP) Sends the specified data in a POST request to the HTTP server, 
