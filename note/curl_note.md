@@ -17,6 +17,7 @@ form and presses the submit button. This will cause curl to pass the
 data to the server using the content-type application/x-www-form-urlencoded. 
 Compare to **-F**, --form.
 
+-F: often for uploading local file
 
 ####-e  
 (HTTP) Sends the "Referrer Page" information to the HTTP server. 
