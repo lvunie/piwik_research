@@ -45,13 +45,13 @@ curl -L -b common.cookie -d form_nonce=89dcb335d1ff3f2f477f5f9f7a79ccc8 -d form_
 go to piwik setting:
 `````````````````````````````````````````````````````````
 ######From homepage to setting menu:
-index.php?module=UsersManager&amp;action=userSettings&amp;idSite=1&amp;period=day&amp;date=yesterday
+http://lvunie.wpic-demo.com/piwik/index.php?module=UsersManager&action=userSettings&idSite=1&period=day&date=yesterday
 
 ######From setting to user administration:
-index.php?module=UsersManager&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday'
+http://lvunie.wpic-demo.com/piwik/index.php?module=UsersManager&action=index&idSite=1&period=day&date=yesterday
 
 ######From setting to website administration:
-index.php?module=SitesManager&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday
+http://lvunie.wpic-demo.com/piwik/index.php?module=SitesManager&action=index&idSite=1&period=day&date=yesterday
 `````````````````````````````````````````````````````````
 
 -------------------------------------------------------------------------------------------
