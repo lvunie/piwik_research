@@ -26,6 +26,8 @@ with -L, --location you can append ";auto" to the --referer URL to make
 curl automatically set the previous URL when it follows a Location: header. 
 The ";auto" string can be used alone, even if you don't set an initial --referer
 
+so my understand is that if u need to go to a new page from current page, u need 
+current page as "reference" to link to a new page.
 ####-L  
 (???)
 
