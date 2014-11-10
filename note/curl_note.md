@@ -10,12 +10,13 @@ The data should be in the format "NAME1=VALUE1; NAME2=VALUE2"
 ####-c (common.cookie)  
 write current operation to cookie
 
-####-d  
+####-d  (POST)
 (HTTP) Sends the specified data in a POST request to the HTTP server, 
 in the same way that a browser does when a user has filled in an HTML 
 form and presses the submit button. This will cause curl to pass the 
 data to the server using the content-type application/x-www-form-urlencoded. 
-Compare to -F, --form.
+Compare to **-F**, --form.
+
 
 ####-e  
 (HTTP) Sends the "Referrer Page" information to the HTTP server. 
