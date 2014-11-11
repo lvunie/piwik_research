@@ -62,5 +62,8 @@ http://lvunie.wpic-demo.com/piwik/index.php?module=SitesManager&action=index&idS
 -------------------------------------------------------------------------------------------
 ##Question:
 
-1. after login to home, how can I go to subpage....
-
+1. 	after login to home, how can I go to subpage....
+2. 	user edit, 
+	user access permission, 
+	superuser permission
+3. 
