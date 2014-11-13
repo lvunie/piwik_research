@@ -30,7 +30,7 @@ parameter:
 @param string     $type The website type, defaults to "website" if not set.  
 @return int     the website ID created  
   
-`````````````````````````````````````
+
 siteName=thisistest  
 urls=www.thisistest.com  
 ecommerce=null  
@@ -47,11 +47,13 @@ excludedUserAgents=null
 keepURLFragments=null  
 type=null  
 
+`````````````````````````````````````
 http://localhost/piwik/piwik/?module=API&method=SitesManager.addSite&format=JSON&token_auth=3da68c1254ba2eafe904432d81a9fffc&siteName=thisistest&urls=www.thisistest.com&ecommerce=null&siteSearch=null&searchKeywordParameters=null&searchCategoryParameters=null&excludedIps=182.9.9.9&excludedQueryParameters=null&timezone=Europe/London&currency=EUR&group=null&startDate=today&excludedUserAgents=null&keepURLFragments=null&type=null
+`````````````````````````````````````
 
 return: {"value":5} 
 int the website ID created(idSite)
-````````````````````````````````````
+
 
 ##2) get website code to embed on tracked page (javascript code!)  
 API:      **SitesManager**  
@@ -76,10 +78,9 @@ parameter:
 
 ``````````````````````````````````````
 http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&format=JSON&token_auth=3da68c1254ba2eafe904432d81a9fffc&idSite=5
-
-** the return code need to be decode.**
 ````````````````````````````````````````````
 
+** the return code need to be decode.**
 
 ##3)create user with admin for website created in 1)
 
@@ -98,9 +99,9 @@ Add a user in the database.
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=new@email.com
 ``````````````````````````````````````````````````````````````````
 
-updateUser
+**updateUser**
 
-deleteUser
+**deleteUser**
 
 ####3.2)user access setting
 API:      **UsersManager**
