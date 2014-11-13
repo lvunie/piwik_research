@@ -1,11 +1,11 @@
 
-##GOAL
- 1) create website  
- 2) get website code to embed on tracked page (javascript code!)  
- 3) create user with admin for website created in 1)  
- 4) set user password (not sure if this is 4) or 3.1))  
+#GOAL
+####1) create website  
+####2) get website code to embed on tracked page (javascript code!)  
+####3) create user with admin for website created in 1)  
+####4) set user password (not sure if this is 4) or 3.1))  
   
-####1)create website  
+##1)create website  
 API:      SitesManager  
 method:	  addSite  
 
@@ -54,7 +54,7 @@ return: {"value":5}
 int the website ID created(idSite)
 ````````````````````````````````````
 
-####2) get website code to embed on tracked page (javascript code!)  
+##2) get website code to embed on tracked page (javascript code!)  
 API:      SitesManager  
 method:	  getJavascriptTag  
 
@@ -82,7 +82,7 @@ http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&fo
 ````````````````````````````````````````````
 
 
-####3create user with admin for website created in 1)
+##3)create user with admin for website created in 1)
 
 ######3.1)create, update, delete user
 API:      UsersManager  
