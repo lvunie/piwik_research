@@ -64,13 +64,15 @@ parameter:
 @param bool **$customCampaignKeywordParam**  
 @param bool **$doNotTrack**  
 @param bool **$disableCookies**  
+  
 @return string The Javascript tag ready to be included on the HTML pages  
 
 ``````````````````````````````````````
 http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&format=JSON&token_auth=3da68c1254ba2eafe904432d81a9fffc&idSite=5
 ````````````````````````````````````````````
 
-** the return code need to be decode.**
+**need to attention**
+the return code need to be decode.
 
 ##3) Create user with admin for website created in 1)
 
