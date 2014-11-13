@@ -87,13 +87,15 @@ Add a user in the database.
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=new@email.com
 ``````````````````````````````````````````````````````````````````
 
-**updateUser**
+**updateUser** & **deleteUser** are very similar as **addUser**
 
-**deleteUser**
+`````````````````````````````````````````````````````````````````````````````
+....
+``````````````````````````````````````````````````````````````````
 
 ####3.2) User access setting
-API:      **UsersManager**
-method:	  **setUserAccess**
+API:      **UsersManager**  
+method:	  **setUserAccess**  
 
 Set an access level to a given user for a list of websites ID.  
 
