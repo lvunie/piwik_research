@@ -9,25 +9,26 @@
 API:      **SitesManager**  
 method:	  **addSite**  
 
+Usage:
 Add a website.
 Requires Super User access.
 	 
 parameter:  
-@param string string      $siteName Site name  
-@param array|string      $urls The URLs array must contain at least one URL called the 'main_url' ; if several URLs are provided in the array, they will be recorded as Alias URLs for this website.  
-@param int $ecommerce    Is Ecommerce Reporting enabled for this website?  
-@param null     $siteSearch  
-@param string    $searchKeywordParameters Comma separated list of search keyword parameter names  
-@param string    $searchCategoryParameters Comma separated list of search category parameter names  
-@param string     $excludedIps Comma separated list of IPs to exclude from the reports (allows wildcards)  
-@param null     $excludedQueryParameters  
-@param string     $timezone Timezone string, eg. 'Europe/London'  
-@param string     $currency Currency, eg. 'EUR'  
-@param string     $group Website group identifier  
-@param string     $startDate Date at which the statistics for this website will start. Defaults to today's date in YYYY-MM-DD format  
-@param null|string     $excludedUserAgents  
-@param int     $keepURLFragments If 1, URL fragments will be kept when tracking. If 2, they will be removed. If 0, the default global behavior will be used.    
-@param string     $type The website type, defaults to "website" if not set.  
+@param string string      **$siteName** Site name  
+@param array|string      **$urls** The URLs array must contain at least one URL called the 'main_url' ; if several URLs are provided in the array, they will be recorded as Alias URLs for this website.  
+@param int **$ecommerce**    Is Ecommerce Reporting enabled for this website?  
+@param null     **$siteSearch**  
+@param string    **$searchKeywordParameters** Comma separated list of search keyword parameter names  
+@param string    **$searchCategoryParameters** Comma separated list of search category parameter names  
+@param string     **$excludedIps** Comma separated list of IPs to exclude from the reports (allows wildcards)  
+@param null     **$excludedQueryParameters**  
+@param string     **$timezone** Timezone string, eg. 'Europe/London'  
+@param string     **$currency** Currency, eg. 'EUR'  
+@param string     **$group** Website group identifier  
+@param string     **$startDate** Date at which the statistics for this website will start. Defaults to today's date in YYYY-MM-DD format  
+@param null|string     **$excludedUserAgents**  
+@param int     **$keepURLFragments** If 1, URL fragments will be kept when tracking. If 2, they will be removed. If 0, the default global behavior will be used.    
+@param string     **$type** The website type, defaults to "website" if not set.  
 @return int     the website ID created  
   
 
@@ -63,17 +64,17 @@ Returns the javascript tag for the given idSite.
 This tag must be included on every page to be tracked by Piwik
 
 parameter:  
-@param int $idSite  
-@param string $piwikUrl  
-@param bool $mergeSubdomains  
-@param bool $groupPageTitlesByDomain  
-@param bool $mergeAliasUrls  
-@param bool $visitorCustomVariables  
-@param bool $pageCustomVariables  
-@param bool $customCampaignNameQueryParam  
-@param bool $customCampaignKeywordParam  
-@param bool $doNotTrack  
-@param bool $disableCookies  
+@param int **$idSite**  
+@param string **$piwikUrl**  
+@param bool **$mergeSubdomains**  
+@param bool **$groupPageTitlesByDomain**  
+@param bool **$mergeAliasUrls**  
+@param bool **$visitorCustomVariables**  
+@param bool **$pageCustomVariables**  
+@param bool **$customCampaignNameQueryParam**  
+@param bool **$customCampaignKeywordParam**  
+@param bool **$doNotTrack**  
+@param bool **$disableCookies**  
 @return string The Javascript tag ready to be included on the HTML pages  
 
 ``````````````````````````````````````
