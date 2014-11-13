@@ -105,7 +105,7 @@ updateUser:
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=123@email.com
 
 deleteUser:
-http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.deleteUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME2``````````````````````````````````````````````````````````````````
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.deleteUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME2
 ```````````````````````````````````````````````````````````````````````````````
 
 ###3.2) User access setting
