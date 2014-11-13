@@ -76,7 +76,7 @@ the return code need to be decode.
 
 ##3) Create user with admin for website created in 1)
 
-####3.1) Create, update, delete user
+###3.1) Create, update, delete user
 API:      **UsersManager**  
 method:	  **addUser**  
 
@@ -102,7 +102,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&for
 ``````````````````````````````````````````````````````````````````
 
 
-####3.2) User access setting
+###3.2) User access setting
 API:      **UsersManager**  
 method:	  **setUserAccess**  
 
@@ -127,7 +127,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&
 ````````````````````````````````````````````````
 
 
-####3.3) Superuser setting  
+###3.3) Superuser setting  
 API:       **UsersManager**  
 method:    **setSuperUserAccess**  
 
