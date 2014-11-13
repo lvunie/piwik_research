@@ -6,8 +6,8 @@
 **4) set user password (not sure if this is 4) or 3.1))**  
   
 ##1)create website  
-API:      SitesManager  
-method:	  addSite  
+**API:      SitesManager**  
+**method:	  addSite**  
 
 Add a website.
 Requires Super User access.
@@ -54,8 +54,8 @@ int the website ID created(idSite)
 ````````````````````````````````````
 
 ##2) get website code to embed on tracked page (javascript code!)  
-API:      SitesManager  
-method:	  getJavascriptTag  
+**API:      SitesManager**  
+**method:	  getJavascriptTag**  
 
 Returns the javascript tag for the given idSite.  
 This tag must be included on every page to be tracked by Piwik
@@ -84,8 +84,8 @@ http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&fo
 ##3)create user with admin for website created in 1)
 
 ######3.1)create, update, delete user
-API:      UsersManager  
-method:	  addUser  
+**API:      UsersManager**  
+**method:	  addUser**  
 
 Add a user in the database.  
  A user is defined by  
@@ -103,8 +103,8 @@ updateUser
 deleteUser
 
 ######3.2)user access setting
-API:      UsersManager
-method:	  setUserAccess
+**API:      UsersManager**
+**method:	  setUserAccess**
 
 Set an access level to a given user for a list of websites ID.  
 
@@ -123,9 +123,9 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&
 ````````````````````````````````````````````````
 
 
-######3.2)superuser   
-API:       UsersManager  
-method:    setSuperUserAccess  
+######3.3)superuser setting  
+**API:       UsersManager**  
+**method:    setSuperUserAccess**  
 
 Enable or disable Super user access to the given user login. Note: When granting Super User access all previous permissions of the user will be removed as the user gains access to everything.
 
