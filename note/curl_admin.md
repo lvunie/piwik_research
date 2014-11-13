@@ -28,10 +28,11 @@ parameter:
 @param string     **$startDate** Date at which the statistics for this website will start. Defaults to today's date in YYYY-MM-DD format  
 @param null|string     **$excludedUserAgents**  
 @param int     **$keepURLFragments** If 1, URL fragments will be kept when tracking. If 2, they will be removed. If 0, the default global behavior will be used.    
-@param string     **$type** The website type, defaults to "website" if not set.  
+@param string     **$type** The website type, defaults to "website" if not set.   
+   
 @return int     the website ID created  
   
-
+**
 excludedIps=127.0.0.1  (here cannot be null)  
 startDate=today        (here need to assign a date, YYYY-MM-DD, or 'today' or 'yesterday')
 
