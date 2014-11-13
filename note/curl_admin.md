@@ -89,18 +89,24 @@ Add a user in the database.
  - an email that has to be in a correct format  
 
 parameter:   
-........   
+@param string **$userLogin**  
+@param string **$password**  
+@param string **$email**  
+@param.   
 
 ````````````````````````````````````````````````````````````````
-http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=new@email.com
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.addUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME2&password=jj722722722&email=new2@email.com
 ``````````````````````````````````````````````````````````````````
 
 **updateUser** & **deleteUser** are very similar as **addUser**
 
 `````````````````````````````````````````````````````````````````````````````
-....
-``````````````````````````````````````````````````````````````````
+updateUser:
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=123@email.com
 
+deleteUser:
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.deleteUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME2``````````````````````````````````````````````````````````````````
+```````````````````````````````````````````````````````````````````````````````
 
 ###3.2) User access setting
 API:      **UsersManager**  
