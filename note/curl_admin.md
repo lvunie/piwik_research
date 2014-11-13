@@ -67,12 +67,15 @@ parameter:
   
 @return string The Javascript tag ready to be included on the HTML pages  
 
+**! need attention**  
+basically, here just need assigning a "idSite" value that can generate the javascript code
+ 
 ``````````````````````````````````````
 http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&format=JSON&token_auth=3da68c1254ba2eafe904432d81a9fffc&idSite=5
 ````````````````````````````````````````````
 
 **!need to attention**   
-the return code need to be decode.  
+the return tag will with html code and need to be decode.  
 
 ##3) Create user with admin for website created in 1)
 
