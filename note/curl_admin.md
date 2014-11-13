@@ -88,6 +88,9 @@ Add a user in the database.
  - an alias  
  - an email that has to be in a correct format  
 
+parameter:   
+........   
+
 ````````````````````````````````````````````````````````````````
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=new@email.com
 ``````````````````````````````````````````````````````````````````
@@ -97,6 +100,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&for
 `````````````````````````````````````````````````````````````````````````````
 ....
 ``````````````````````````````````````````````````````````````````
+
 
 ####3.2) User access setting
 API:      **UsersManager**  
@@ -108,6 +112,7 @@ Set an access level to a given user for a list of websites ID.
 	If access = 'noaccess' the current access (if any) will be deleted.  
 	If access = 'view' or 'admin' the current access level is deleted and updated with the new value.
 
+parameter:   
 @param string $userLogin The user login  
 @param string $access Access to grant. Must have one of the following value : noaccess, view, admin
 @param int|array $idSites The array of idSites on which to apply the access level for the user. If the value is "all" then we apply the access level to all the websites ID for which the current authentificated user has an 'admin' access.
@@ -127,6 +132,7 @@ method:    **setSuperUserAccess**
 Usage:
 **Enable or disable Super user access to the given user login. Note: When granting Super User access all previous permissions of the user will be removed as the user gains access to everything.**
 
+parameter:   
 @param string   $userLogin          the user login.
 @param bool|int $hasSuperUserAccess true or '1' to grant Super User access, false or '0' to remove Super User
  
