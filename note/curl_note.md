@@ -59,6 +59,31 @@ http://lvunie.wpic-demo.com/piwik/index.php?module=UsersManager&action=index&idS
 http://lvunie.wpic-demo.com/piwik/index.php?module=SitesManager&action=index&idSite=1&period=day&date=yesterday
 `````````````````````````````````````````````````````````
 
+####Create User By "curl"
+`````````````````````````````````````````````````````
+###create:
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.addUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444
+
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.addUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME
+
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.addUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=NEWUSERPASSWORD
+
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.addUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=NEWUSERPASSWORD&email=NEWUSEREMAIL@email.com
+
+
+###update User:
+http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=haha@email.com
+`````````````````````````````````````````````````
+
+####Create website
+``````````````````````````````````````````
+ID	NAME	URLS	EXCLUDED IPS	EXCLUDED PARAMETERS	SITE SEARCH	TIME ZONE	CURRENCY	ECOMMERCE
+
+
+``````````````````````````````````
+
+
+
 -------------------------------------------------------------------------------------------
 ##Question: 
 
