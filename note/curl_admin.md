@@ -113,9 +113,9 @@ Set an access level to a given user for a list of websites ID.
 	If access = 'view' or 'admin' the current access level is deleted and updated with the new value.
 
 parameter:   
-@param string $userLogin The user login  
-@param string $access Access to grant. Must have one of the following value : noaccess, view, admin
-@param int|array $idSites The array of idSites on which to apply the access level for the user. If the value is "all" then we apply the access level to all the websites ID for which the current authentificated user has an 'admin' access.
+@param string **$userLogin** The user login  
+@param string **$access** Access to grant. Must have one of the following value : noaccess, view, admin  
+@param int|array **$idSites** The array of idSites on which to apply the access level for the user. If the value is "all" then we apply the access level to all the websites ID for which the current authentificated user has an 'admin' access.
 
 @return bool true on success  
 
