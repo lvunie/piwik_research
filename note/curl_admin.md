@@ -79,7 +79,7 @@ the return tag will with html code and need to be decode.
 
 ##3) Create user with admin for website created in 1)
 
-###3.1) Create, update, delete user
+###3.1) Create, Update, Delete user
 API:      **UsersManager**  
 method:	  **addUser**  
 
