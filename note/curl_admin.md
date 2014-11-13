@@ -133,7 +133,7 @@ Usage:
 **Enable or disable Super user access to the given user login. Note: When granting Super User access all previous permissions of the user will be removed as the user gains access to everything.**
 
 parameter:   
-@param string   $userLogin          the user login.
+@param string   **$userLogin**          the user login.  
 @param bool|int $hasSuperUserAccess true or '1' to grant Super User access, false or '0' to remove Super User
  
 ``````````````````````````````````
