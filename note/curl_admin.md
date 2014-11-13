@@ -32,21 +32,8 @@ parameter:
 @return int     the website ID created  
   
 
-siteName=thisistest  
-urls=www.thisistest.com  
-ecommerce=null  
-siteSearch=null  
-searchKeywordParameters=null  
-searchCategoryParameters=null  
 excludedIps=127.0.0.1  (here cannot be null)  
-excludedQueryParameters=null  
-timezone=Europe/London  
-currency=EUR  
-group=null  
 startDate=today        (here need to assign a date, YYYY-MM-DD, or 'today' or 'yesterday')
-excludedUserAgents=null  
-keepURLFragments=null  
-type=null  
 
 `````````````````````````````````````
 http://localhost/piwik/piwik/?module=API&method=SitesManager.addSite&format=JSON&token_auth=3da68c1254ba2eafe904432d81a9fffc&siteName=thisistest&urls=www.thisistest.com&ecommerce=null&siteSearch=null&searchKeywordParameters=null&searchCategoryParameters=null&excludedIps=182.9.9.9&excludedQueryParameters=null&timezone=Europe/London&currency=EUR&group=null&startDate=today&excludedUserAgents=null&keepURLFragments=null&type=null
