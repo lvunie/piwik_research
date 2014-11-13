@@ -5,7 +5,7 @@
 **3) create user with admin for website created in 1)**  
 **4) set user password (not sure if this is 4) or 3.1))**  
   
-##1)create website  
+##1) Create website  
 API:      **SitesManager**  
 method:	  **addSite**  
 
@@ -43,7 +43,7 @@ return: {"value":5}
 int the website ID created(idSite)
 
 
-##2) get website code to embed on tracked page (javascript code!)  
+##2) Get website code to embed on tracked page (javascript code!)  
 API:      **SitesManager**  
 method:	  **getJavascriptTag**  
 
@@ -70,7 +70,7 @@ http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&fo
 
 ** the return code need to be decode.**
 
-##3)create user with admin for website created in 1)
+##3) Create user with admin for website created in 1)
 
 ####3.1)create, update, delete user
 API:      **UsersManager**  
@@ -91,7 +91,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&for
 
 **deleteUser**
 
-####3.2)user access setting
+####3.2) User access setting
 API:      **UsersManager**
 method:	  **setUserAccess**
 
@@ -112,7 +112,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&
 ````````````````````````````````````````````````
 
 
-####3.3)superuser setting  
+####3.3) Superuser setting  
 API:       **UsersManager**  
 method:    **setSuperUserAccess**  
 
