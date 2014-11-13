@@ -83,7 +83,7 @@ http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&fo
 
 ##3)create user with admin for website created in 1)
 
-######3.1)create, update, delete user
+####3.1)create, update, delete user
 **API:      UsersManager**  
 **method:	  addUser**  
 
@@ -102,7 +102,7 @@ updateUser
 
 deleteUser
 
-######3.2)user access setting
+####3.2)user access setting
 **API:      UsersManager**
 **method:	  setUserAccess**
 
@@ -123,7 +123,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&
 ````````````````````````````````````````````````
 
 
-######3.3)superuser setting  
+####3.3)superuser setting  
 **API:       UsersManager**  
 **method:    setSuperUserAccess**  
 
