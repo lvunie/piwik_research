@@ -1,9 +1,9 @@
 
-#GOAL
-####1) create website  
-####2) get website code to embed on tracked page (javascript code!)  
-####3) create user with admin for website created in 1)  
-####4) set user password (not sure if this is 4) or 3.1))  
+##GOAL
+**1) create website**  
+**2) get website code to embed on tracked page (javascript code!)**  
+**3) create user with admin for website created in 1)**  
+**4) set user password (not sure if this is 4) or 3.1))**  
   
 ##1)create website  
 API:      SitesManager  
