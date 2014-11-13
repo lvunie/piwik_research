@@ -10,7 +10,7 @@ API:      **SitesManager**
 method:	  **addSite**  
 
 Usage:
-Add a website.
+**Add a website.**
 Requires Super User access.
 	 
 parameter:  
@@ -39,7 +39,7 @@ startDate=today        (here need to assign a date, YYYY-MM-DD, or 'today' or 'y
 http://localhost/piwik/piwik/?module=API&method=SitesManager.addSite&format=JSON&token_auth=3da68c1254ba2eafe904432d81a9fffc&siteName=thisistest&urls=www.thisistest.com&ecommerce=null&siteSearch=null&searchKeywordParameters=null&searchCategoryParameters=null&excludedIps=182.9.9.9&excludedQueryParameters=null&timezone=Europe/London&currency=EUR&group=null&startDate=today&excludedUserAgents=null&keepURLFragments=null&type=null
 `````````````````````````````````````
 
-return: {"value":5} 
+return: {"value":5}  
 int the website ID created(idSite)
 
 
@@ -47,7 +47,8 @@ int the website ID created(idSite)
 API:      **SitesManager**  
 method:	  **getJavascriptTag**  
 
-Returns the javascript tag for the given idSite.  
+usage：
+**Returns the javascript tag for the given idSite.**  
 This tag must be included on every page to be tracked by Piwik
 
 parameter:  
@@ -76,6 +77,7 @@ http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&fo
 API:      **UsersManager**  
 method:	  **addUser**  
 
+usage:  
 Add a user in the database.  
  A user is defined by  
  - a login that has to be unique and valid  
@@ -97,6 +99,7 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&for
 API:      **UsersManager**  
 method:	  **setUserAccess**  
 
+Usage:
 Set an access level to a given user for a list of websites ID.  
 
 	If access = 'noaccess' the current access (if any) will be deleted.  
@@ -118,7 +121,8 @@ http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&
 API:       **UsersManager**  
 method:    **setSuperUserAccess**  
 
-Enable or disable Super user access to the given user login. Note: When granting Super User access all previous permissions of the user will be removed as the user gains access to everything.
+Usage:
+**Enable or disable Super user access to the given user login. Note: When granting Super User access all previous permissions of the user will be removed as the user gains access to everything.**
 
 @param string   $userLogin          the user login.
 @param bool|int $hasSuperUserAccess true or '1' to grant Super User access, false or '0' to remove Super User
