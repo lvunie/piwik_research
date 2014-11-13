@@ -7,12 +7,12 @@
   
 ####1)create website  
 API:      SitesManager  
-method:	  addSite
+method:	  addSite  
 
 Add a website.
 Requires Super User access.
 	 
-parameter:
+parameter:  
 @param string string $siteName Site name  
 @param array|string $urls The URLs array must contain at least one URL called the 'main_url' ; if several URLs are provided in the array, they will be recorded as Alias URLs for this website.  
 @param int $ecommerce Is Ecommerce Reporting enabled for this website?  
@@ -54,11 +54,11 @@ return: {"value":5}
 int the website ID created(idSite)
 ````````````````````````````````````
 
-####2) get website code to embed on tracked page (javascript code!)
-API:      SitesManager
-method:	  getJavascriptTag
+####2) get website code to embed on tracked page (javascript code!)  
+API:      SitesManager  
+method:	  getJavascriptTag  
 
-Returns the javascript tag for the given idSite.
+Returns the javascript tag for the given idSite.  
 This tag must be included on every page to be tracked by Piwik
 
 parameter:  
@@ -85,15 +85,15 @@ http://localhost/piwik/piwik/?module=API&method=SitesManager.getJavascriptTag&fo
 ####3create user with admin for website created in 1)
 
 ######3.1)create, update, delete user
-API:      UsersManager
-method:	  addUser
+API:      UsersManager  
+method:	  addUser  
 
-Add a user in the database.
- A user is defined by
- - a login that has to be unique and valid
- - a password that has to be valid
- - an alias
- - an email that has to be in a correct format
+Add a user in the database.  
+ A user is defined by  
+ - a login that has to be unique and valid  
+ - a password that has to be valid  
+ - an alias  
+ - an email that has to be in a correct format  
 
 ````````````````````````````````````````````````````````````````
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.updateUser&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=NEWUSERNAME&password=123123123123&email=new@email.com
@@ -107,26 +107,26 @@ deleteUser
 API:      UsersManager
 method:	  setUserAccess
 
-Set an access level to a given user for a list of websites ID.
+Set an access level to a given user for a list of websites ID.  
 
-	If access = 'noaccess' the current access (if any) will be deleted.
+	If access = 'noaccess' the current access (if any) will be deleted.  
 	If access = 'view' or 'admin' the current access level is deleted and updated with the new value.
 
-@param string $userLogin The user login
+@param string $userLogin The user login  
 @param string $access Access to grant. Must have one of the following value : noaccess, view, admin
 @param int|array $idSites The array of idSites on which to apply the access level for the user. If the value is "all" then we apply the access level to all the websites ID for which the current authentificated user has an 'admin' access.
 
-@return bool true on success
+@return bool true on success  
 
-**Superuser cannot be set for access, it already have all access**
+**Superuser cannot be set for access, it already have all access  
 ````````````````````````````````````````````````
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=KFC&access=view&idSites=1
 ````````````````````````````````````````````````
 
 
-######3.2)superuser 
-API:       UsersManager
-method:    setSuperUserAccess
+######3.2)superuser   
+API:       UsersManager  
+method:    setSuperUserAccess  
 
 Enable or disable Super user access to the given user login. Note: When granting Super User access all previous permissions of the user will be removed as the user gains access to everything.
 
