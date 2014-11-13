@@ -119,7 +119,9 @@ parameter:
 
 @return bool true on success  
 
-**Superuser cannot be set for access, it already have all access  
+**!need to attention**  
+Superuser cannot be set for access, it already have all access  
+  
 ````````````````````````````````````````````````
 http://lvunie.wpic-demo.com/piwik/?module=API&method=UsersManager.setUserAccess&format=JSON&token_auth=46733a12807bbee50b81e85826ad2444&userLogin=KFC&access=view&idSites=1
 ````````````````````````````````````````````````
