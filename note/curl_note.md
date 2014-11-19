@@ -91,4 +91,26 @@ ID	NAME	URLS	EXCLUDED IPS	EXCLUDED PARAMETERS	SITE SEARCH	TIME ZONE	CURRENCY	ECO
 2. 	user edit,   (php?html?)
 	user access permission, 
 	superuser permission
-3.  shell script
+3.  shell 
+
+For SOAP, four main element: Envelop, Header, Body and Fault
+Body with similar concept with XML so is ok, fault is for
+error display. For envelop is seems complex but i think it is 
+a format to define XML as soap message
+ 
+I think SOAP not only need  programming knowledge, but also some idea
+from data communication stuff, like protocol concept，HTTP... try learning a example for
+writing a XML to register a profram to SOAP service
+
+So I think SOAP need to consider more of service communication, like a frame. And what I understand for
+JSON, just need to think about how to write data and how to read data, it more about a format.
+
+
+
+
+
+
+
+
+
+
